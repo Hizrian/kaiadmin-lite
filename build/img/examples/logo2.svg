@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="108" height="32" viewBox="0 0 108 32">
+  <defs>
+    <clipPath id="clip-logo2">
+      <rect width="108" height="32"/>
+    </clipPath>
+  </defs>
+  <g id="logo2" clip-path="url(#clip-logo2)">
+    <rect width="108" height="32" fill="rgba(255,255,255,0)"/>
+    <g id="Group_1" data-name="Group 1">
+      <path id="Path_2" data-name="Path 2" d="M26.507,8.242,13.754.879,1,8.242V22.969l4.252,2.454V10.7l8.5-4.908,8.5,4.908V25.423l4.252-2.454Z" fill="#1572e8"/>
+      <path id="Path_3" data-name="Path 3" d="M19.133,14.455,14.883,12l-4.252,2.455v4.908l4.252,2.454,4.251-2.454Z" transform="translate(-1.129 -1.303)" fill="#1572e8"/>
+      <path id="Path_4" data-name="Path 4" d="M19.133,25.9l-4.251,2.454L10.631,25.9V30.81l4.252,2.454,4.251-2.454Z" transform="translate(-1.129 -2.933)" fill="#1572e8"/>
+    </g>
+    <text id="AdminSEA" transform="translate(37 23)" fill="#1572e8" font-size="18" font-family="Lato-Regular, Lato"><tspan x="0" y="0">AdminSEA</tspan></text>
+  </g>
+</svg>

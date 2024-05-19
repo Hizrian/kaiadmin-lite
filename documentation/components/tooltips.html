@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>Kaiadmin Bootstrap 5 Admin Dashboard</title>
+    <meta
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no"
+      name="viewport"
+    />
+    <link rel="icon" href="../assets/img/kaiadmin/favicon.ico" type="image/x-icon" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <script src="../assets/js/plugin/webfont/webfont.min.js"></script>
+    <script>
+      WebFont.load({
+        google: { families: ["Public Sans:300,400,500,600,700"] },
+        custom: {
+          families: [
+            "Font Awesome 5 Solid",
+            "Font Awesome 5 Regular",
+            "Font Awesome 5 Brands",
+            "simple-line-icons",
+          ],
+          urls: ["../../assets/css/fonts.min.css"],
+        },
+        active: function () {
+          sessionStorage.fonts = true;
+        },
+      });
+    </script>
+
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../assets/css/plugins.min.css" />
+    <link rel="stylesheet" href="../assets/css/kaiadmin.min.css" />
+    <link href="../assets/styles.css" rel="stylesheet" />
+    <link href="../assets/prism.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- Sidebar -->
+      <div class="sidebar sidebar-style-2" data-background-color="white">
+        <div class="sidebar-logo">
+          <!-- Logo Header -->
+          <div class="logo-header" data-background-color="white">
+            <a href="../index.html" class="logo">
+              <img
+                src="../assets/img/kaiadmin/logo_dark.svg"
+                alt="navbar brand"
+                class="navbar-brand"
+                height="20"
+              />
+            </a>
+            <div class="nav-toggle">
+              <button class="btn btn-toggle toggle-sidebar">
+                <i class="gg-menu-right"></i>
+              </button>
+              <button class="btn btn-toggle sidenav-toggler">
+                <i class="gg-menu-left"></i>
+              </button>
+            </div>
+            <button class="topbar-toggler more">
+              <i class="gg-more-vertical-alt"></i>
+            </button>
+          </div>
+          <!-- End Logo Header -->
+        </div>
+        <div class="sidebar-wrapper scrollbar scrollbar-inner">
+          <div class="sidebar-content">
+            <ul class="nav nav-info">
+              <li class="nav-item">
+                <a href="../index.html">
+                  <i class="fas fa-home"></i>
+                  <p>Introduction</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  data-bs-toggle="collapse"
+                  href="#dashboard"
+                  class="collapsed"
+                  aria-expanded="false"
+                >
+                  <i class="fas fa-code"></i>
+                  <p>Getting Started</p>
+                  <span class="caret"></span>
+                </a>
+                <div class="collapse" id="dashboard">
+                  <ul class="nav nav-collapse">
+                    <li>
+                      <a href="../getting-started1.html">
+                        <span class="sub-item">Dashboard 1</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="nav-section">
+                <span class="sidebar-mini-icon">
+                  <i class="fa fa-ellipsis-h"></i>
+                </span>
+                <h4 class="text-section">Components</h4>
+              </li>
+              <li class="nav-item">
+                <a href="alerts.html">
+                  <span class="letter-icon">A</span>
+                  <p>Alerts</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="avatars.html">
+                  <span class="letter-icon">Av</span>
+                  <p>Avatars</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="badge.html">
+                  <span class="letter-icon">Ba</span>
+                  <p>Badge</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="breadcrumb.html">
+                  <span class="letter-icon">Bc</span>
+                  <p>Breadcrumb</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="buttons.html">
+                  <span class="letter-icon">Bt</span>
+                  <p>Buttons</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="card.html">
+                  <span class="letter-icon">C</span>
+                  <p>Card</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="collapse.html">
+                  <span class="letter-icon">Co</span>
+                  <p>Collapse</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="colors.html">
+                  <span class="letter-icon">Cl</span>
+                  <p>Colors</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="dropdowns.html">
+                  <span class="letter-icon">D</span>
+                  <p>Dropdowns</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="forms.html">
+                  <span class="letter-icon">F</span>
+                  <p>Forms</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="layoutsbackground.html">
+                  <span class="letter-icon">L</span>
+                  <p>Layouts Background</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="modal.html">
+                  <span class="letter-icon">M</span>
+                  <p>Modal</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="navs.html">
+                  <span class="letter-icon">N</span>
+                  <p>Navs</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="navbar.html">
+                  <span class="letter-icon">Nb</span>
+                  <p>Navbar</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="pagination.html">
+                  <span class="letter-icon">Pa</span>
+                  <p>Pagination</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="popovers.html">
+                  <span class="letter-icon">Po</span>
+                  <p>Popovers</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="progress.html">
+                  <span class="letter-icon">Pr</span>
+                  <p>Progress</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="spinners.html">
+                  <span class="letter-icon">Sp</span>
+                  <p>Spinners</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="tables.html">
+                  <span class="letter-icon">T</span>
+                  <p>Tables</p>
+                </a>
+              </li>
+              <li class="nav-item active">
+                <a href="tooltips.html">
+                  <span class="letter-icon">To</span>
+                  <p>Tooltips</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="typography.html">
+                  <span class="letter-icon">Ty</span>
+                  <p>Typography</p>
+                </a>
+              </li>
+
+              <li class="nav-section">
+                <span class="sidebar-mini-icon">
+                  <i class="fa fa-ellipsis-h"></i>
+                </span>
+                <h4 class="text-section">Plugins</h4>
+              </li>
+              <li class="nav-item">
+                <a href="../plugins/chart.html">
+                  <span class="letter-icon">C</span>
+                  <p>Chart.js</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="../plugins/chartcircle.html">
+                  <span class="letter-icon">Cc</span>
+                  <p>Chart Circle</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="../plugins/animate.html">
+                  <span class="letter-icon">Cs</span>
+                  <p>CSS Animate</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="../plugins/datatables.html">
+                  <span class="letter-icon">Da</span>
+                  <p>Datatables</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="../plugins/jsvectormap.html">
+                  <span class="letter-icon">Jv</span>
+                  <p>Jsvectormap</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="../plugins/scrollbar.html">
+                  <span class="letter-icon">Js</span>
+                  <p>Jquery Scrollbar</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="../plugins/notify.html">
+                  <span class="letter-icon">N</span>
+                  <p>Notify</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="../plugins/sweetalert.html">
+                  <span class="letter-icon">Sa</span>
+                  <p>Sweet Alert</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="../plugins/sparkline.html">
+                  <span class="letter-icon">Sp</span>
+                  <p>Sparkline</p>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- End Sidebar -->
+
+      <div class="main-panel">
+        <div class="main-header">
+          <div class="main-header-logo">
+            <!-- Logo Header -->
+            <div class="logo-header" data-background-color="white">
+              <a href="../index.html" class="logo">
+                <img
+                  src="../assets/img/kaiadmin/logo_dark.svg"
+                  alt="navbar brand"
+                  class="navbar-brand"
+                  height="20"
+                />
+              </a>
+              <div class="nav-toggle">
+                <button class="btn btn-toggle toggle-sidebar">
+                  <i class="gg-menu-right"></i>
+                </button>
+                <button class="btn btn-toggle sidenav-toggler">
+                  <i class="gg-menu-left"></i>
+                </button>
+              </div>
+              <button class="topbar-toggler more">
+                <i class="gg-more-vertical-alt"></i>
+              </button>
+            </div>
+            <!-- End Logo Header -->
+          </div>
+          <nav class="navbar navbar-header navbar-expand-lg" data-background-color="dark">
+            <div class="container-fluid">
+              <ul class="navbar-nav topbar-nav ms-md-auto align-items-center">
+                <li class="nav-item">
+                  <a href="../../examples/demo1" class="nav-link"> Live Preview </a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+        <div class="content content-documentation">
+          <div class="container-fluid">
+            <div class="card card-documentation">
+              <div class="card-header">
+                <h4>Tooltips</h4>
+                <p class="mb-0 op-8">
+                  Documentation and examples for adding custom Bootstrap tooltips with CSS and
+                  JavaScript using CSS3 for animations and data-attributes for local title storage.
+                </p>
+              </div>
+              <div class="card-body">
+                <div class="table-content">
+                  <span class="title">Table of Contents</span>
+                  <ul>
+                    <li>
+                      <a href="#examples">Examples</a>
+                    </li>
+                    <li>
+                      <a href="#usage">Usage</a>
+                      <ol>
+                        <li>
+                          <a href="#markup">Markup</a>
+                        </li>
+                      </ol>
+                    </li>
+                  </ul>
+                </div>
+                <h4 class="subcontent-title" id="examples"><span>Examples</span></h4>
+                <p>Hover over the links below to see tooltips:</p>
+                <div class="bd-example tooltip-demo">
+                  <p class="muted">
+                    Placeholder text to demonstrate some
+                    <a href="#" data-bs-toggle="tooltip" data-bs-title="Default tooltip"
+                      >inline links</a
+                    >
+                    with tooltips. This is now just filler, no killer. Content placed here just to
+                    mimic the presence of
+                    <a href="#" data-bs-toggle="tooltip" data-bs-title="Another tooltip"
+                      >real text</a
+                    >. And all that just to give you an idea of how tooltips would look when used in
+                    real-world situations. So hopefully you've now seen how
+                    <a href="#" data-bs-toggle="tooltip" data-bs-title="Another one here too"
+                      >these tooltips on links</a
+                    >
+                    can work in practice, once you use them on
+                    <a href="#" data-bs-toggle="tooltip" data-bs-title="The last tip!">your own</a>
+                    site or project.
+                  </p>
+                </div>
+                <p>
+                  Hover over the buttons below to see the four tooltips directions: top, right,
+                  bottom, and left.
+                </p>
+                <div class="bd-example">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="top"
+                    data-bs-title="Tooltip on top"
+                  >
+                    Tooltip on top
+                  </button>
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="right"
+                    data-bs-title="Tooltip on right"
+                  >
+                    Tooltip on right
+                  </button>
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="bottom"
+                    data-bs-title="Tooltip on bottom"
+                  >
+                    Tooltip on bottom
+                  </button>
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="left"
+                    data-bs-title="Tooltip on left"
+                  >
+                    Tooltip on left
+                  </button>
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-bs-toggle="tooltip"
+                    data-bs-html="true"
+                    data-bs-title="<em>Tooltip</em> <u>with</u> <b>HTML</b>"
+                  >
+                    Tooltip with HTML
+                  </button>
+                </div>
+                <pre class="language-markup">
+                  <code class="language-markup">
+                    &lt;button type=&quot;button&quot; class=&quot;btn btn-secondary&quot; data-bs-toggle=&quot;tooltip&quot; data-bs-placement=&quot;top&quot; data-bs-title=&quot;Tooltip on top&quot;&gt;
+                      Tooltip on top
+                    &lt;/button&gt;
+                    &lt;button type=&quot;button&quot; class=&quot;btn btn-secondary&quot; data-bs-toggle=&quot;tooltip&quot; data-bs-placement=&quot;right&quot; data-bs-title=&quot;Tooltip on right&quot;&gt;
+                      Tooltip on right
+                    &lt;/button&gt;
+                    &lt;button type=&quot;button&quot; class=&quot;btn btn-secondary&quot; data-bs-toggle=&quot;tooltip&quot; data-bs-placement=&quot;bottom&quot; data-bs-title=&quot;Tooltip on bottom&quot;&gt;
+                      Tooltip on bottom
+                    &lt;/button&gt;
+                    &lt;button type=&quot;button&quot; class=&quot;btn btn-secondary&quot; data-bs-toggle=&quot;tooltip&quot; data-bs-placement=&quot;left&quot; data-bs-title=&quot;Tooltip on left&quot;&gt;
+                      Tooltip on left
+                    &lt;/button&gt;
+                  </code>
+                </pre>
+                <p>And with custom HTML added:</p>
+                <pre class="language-markup">
+                  <code class="language-markup">
+                    &lt;button type=&quot;button&quot; class=&quot;btn btn-secondary&quot; data-bs-toggle=&quot;tooltip&quot; data-bs-html=&quot;true&quot; data-bs-title=&quot;&lt;em&gt;Tooltip&lt;/em&gt; &lt;u&gt;with&lt;/u&gt; &lt;b&gt;HTML&lt;/b&gt;&quot;&gt;
+                    Tooltip with HTML
+                  &lt;/button&gt;
+                  </code>
+                </pre>
+
+                <h4 class="subcontent-title" id="usage"><span>Usage</span></h4>
+                <p>
+                  The tooltip plugin generates content and markup on demand, and by default places
+                  tooltips after their trigger element.
+                </p>
+
+                <p>Trigger the tooltip via JavaScript:</p>
+                <pre class="language-markup">
+                  <code class="language-javascript">
+                    const exampleEl = document.getElementById('example')
+const tooltip = new bootstrap.Tooltip(exampleEl, options)
+                  </code>
+                </pre>
+                <h5 id="markup">Markup</h5>
+                <p>
+                  The required markup for a tooltip is only a
+                  <code class="highlighter-rouge">data</code> attribute and
+                  <code class="highlighter-rouge">title</code> on the HTML element you wish to have
+                  a tooltip. The generated markup of a tooltip is rather simple, though it does
+                  require a position (by default, set to
+                  <code class="highlighter-rouge">top</code> by the plugin).
+                </p>
+                <div class="bd-callout bd-callout-warning">
+                  <h4>Making tooltips work for keyboard and assistive technology users</h4>
+
+                  <p>
+                    You should only add tooltips to HTML elements that are traditionally
+                    keyboard-focusable and interactive (such as links or form controls). Although
+                    arbitrary HTML elements (such as
+                    <code class="highlighter-rouge">&lt;span&gt;</code>s) can be made focusable by
+                    adding the <code class="highlighter-rouge">tabindex="0"</code> attribute, this
+                    will add potentially annoying and confusing tab stops on non-interactive
+                    elements for keyboard users. In addition, most assistive technologies currently
+                    do not announce the tooltip in this situation.
+                  </p>
+                </div>
+                <pre class="languange-markup">
+                  <code class="language-markup">
+                    &lt;!-- HTML to write --&gt;
+                    &lt;a href=&quot;#&quot; data-bs-toggle=&quot;tooltip&quot; data-bs-title=&quot;Some tooltip text!&quot;&gt;Hover over me&lt;/a&gt;
+
+                    &lt;!-- Generated markup by the plugin --&gt;
+                    &lt;div class=&quot;tooltip bs-tooltip-auto&quot; role=&quot;tooltip&quot;&gt;
+                      &lt;div class=&quot;tooltip-arrow&quot;&gt;&lt;/div&gt;
+                      &lt;div class=&quot;tooltip-inner&quot;&gt;
+                        Some tooltip text!
+                      &lt;/div&gt;
+                    &lt;/div&gt;
+                  </code>
+                </pre>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="../assets/js/core/jquery-3.7.1.min.js"></script>
+  <script src="../assets/js/core/popper.min.js"></script>
+  <script src="../assets/js/core/bootstrap.min.js"></script>
+  <script src="../assets/js/plugin/jquery-scrollbar/jquery.scrollbar.min.js"></script>
+  <script src="../assets/js/kaiadmin.min.js"></script>
+  <script src="../assets/prism.js"></script>
+  <script src="../assets/prism-normalize-whitespace.min.js"></script>
+  <script type="text/javascript">
+    // Optional
+    Prism.plugins.NormalizeWhitespace.setDefaults({
+      "remove-trailing": true,
+      "remove-indent": true,
+      "left-trim": true,
+      "right-trim": true,
+    });
+
+    // handle links with @href started with '#' only
+    $(document).on("click", 'a[href^="#"]', function (e) {
+      // target element id
+      var id = $(this).attr("href");
+
+      // target element
+      var $id = $(id);
+      if ($id.length === 0) {
+        return;
+      }
+
+      // prevent standard hash navigation (avoid blinking in IE)
+      e.preventDefault();
+
+      // top position relative to the document
+      var pos = $id.offset().top - 80;
+
+      // animated top scrolling
+      $("body, html").animate({ scrollTop: pos });
+    });
+  </script>
+</html>

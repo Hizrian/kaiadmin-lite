@@ -1,0 +1,312 @@
+/* RTL Layout */
+.rtl {
+  direction: rtl;
+  text-align: right;
+  position: unset;
+  .logo-header {
+    float: right;
+    .nav-toggle {
+      left: 18px;
+      right: unset;
+    }
+  }
+  .nav, .list-unstyled {
+    padding-right: 0px;
+  }
+  .navbar {
+    .navbar-nav {
+      .nav-item {
+        margin-left: 7px;
+        &:last-child {
+          margin-left: 0px;
+        }
+      }
+    }
+  }
+  .navbar-expand-lg .navbar-nav .dropdown-menu {
+    left: 0;
+    right: auto;
+  }
+  .navbar-header .dropdown-menu:after{
+    left: 10px;
+    right: unset;
+  }
+  .sidebar {
+    right: 0;
+    left: unset;
+    .user .info {
+      a > span {
+        text-align: right;
+      }
+      .caret {
+        left: 0px;
+        right: unset;
+      }
+    }
+    .nav {
+      > .nav-item {
+        a {
+          i {
+            margin-right: 0px;
+            margin-left: 15px;
+          }
+          p {
+            margin-right: 0px;
+          }
+          .caret {
+            margin-right: auto;
+            margin-left: 10px;
+          }
+        }
+      }
+      .nav-section {
+        .text-section {
+          text-align: right;
+        }
+      }
+    }
+    .nav-collapse {
+      li a .sub-item {
+        margin-left: 0px;
+        margin-right: 25px;
+        &:before {
+          left: unset;
+          right: -15px;
+        }
+      }
+      &.subnav li a{
+        padding-left: 25px !important;
+        padding-right: 40px !important;
+      }
+    }
+  }
+  .sidebar .nav > .nav-item.active > a:before, .sidebar[data-background-color="white"] .nav > .nav-item.active > a:before, .sidebar .nav > .nav-item.active:hover > a:before, .sidebar[data-background-color="white"] .nav > .nav-item.active:hover > a:before, .sidebar .nav > .nav-item a[data-toggle=collapse][aria-expanded=true]:before, .sidebar[data-background-color="white"] .nav > .nav-item a[data-toggle=collapse][aria-expanded=true]:before{
+    left: unset;
+    right:0;
+  }
+  .quick-sidebar{
+    left: -380px;
+    right: unset;
+    .nav-link {
+      margin-left: 15px !important;
+      margin-right: unset;
+    }
+    .close-quick-sidebar {
+      right: unset;
+      left: 25px;
+    }
+  }
+  .scrollbar-inner > .scroll-element.scroll-y, .scrollbar-outer > .scroll-element.scroll-y {
+    left: 2px;
+    right: unset;
+  }
+  .scrollbar-outer > .scroll-content.scroll-scrolly_visible {
+    right: -12px;
+    margin-right: 12px !important;
+  }
+  .messages-contact .contact-list .user a .user-data, .messages-contact .contact-list .user a .user-data2 {
+    margin-right: 20px;
+    margin-left: 0;
+  }
+  .messages-wrapper .messages-body .message-in, .conversations-body .message-in {
+    margin-left: 40px;
+    margin-right: 0;
+    float: right;
+  }
+  .messages-wrapper .messages-body .message-in .message-body .message-content, .conversations-body .message-in .message-body .message-content{
+    margin-left: 0;
+    margin-right: 10px;
+    &:before {
+      left: unset;
+      right: -10px;
+      border-left: 10px solid #f7f7f7;
+      border-right-width: 0;
+    }
+  }
+  .messages-wrapper .messages-body .message-in .message-body .date, .conversations-body .message-in .message-body .date{
+    margin-right: 10px;
+    padding-right: 12px;
+    margin-left: 0;
+    padding-left: 0;
+  }
+  .messages-wrapper .messages-body .message-out, .conversations-body .message-out{
+    float: left;
+    margin-left: 0;
+    margin-right: 40px;
+  }
+  .messages-wrapper .messages-body .message-out .message-body .message-content, .conversations-body .message-out .message-body .message-content{
+    margin-right: 0;
+    margin-left: 10px;
+    &:before {
+      right: unset;
+      left: -10px;
+      border-right: 10px solid $primary-color;
+      border-left-width: 0;
+    }
+  }
+  .messages-wrapper .messages-body .message-out .message-body .date, .conversations-body .message-out .message-body .date{
+    margin-left: 10px;
+    padding-left: 15px;
+    margin-right: 0;
+    padding-right: 0;
+    text-align: left;
+  }
+  .messages-form .messages-form-control {
+    padding-right: 0;
+    padding-left: 15px;
+  }
+  .main-panel {
+    float: left;
+  }
+  .card-title, .card-category {
+    text-align: right;
+  }
+  .card .card-header .card-head-row .card-tools {
+    margin-right: auto;
+    margin-left: unset;
+    padding-left: 0;
+    padding-right: 15px;
+  }
+  .card-stats .col-icon {
+    margin-left: 0px;
+    margin-right: 15px;
+  }
+  .card-pricing .specification-list {
+    padding-right: 0px;
+  }
+  .card-profile .user-stats [class^="col"] {
+    border-left: 1px solid #ebebeb;
+    border-right-width: 0;
+    &:last-child{
+      border-left: 0px;
+    }
+  }
+  .btn {
+    .btn-label {
+      i {
+        margin-left: 2px;
+        margin-right: -2px;
+      }
+    }
+  }
+  .dropdown-toggle::after{
+    margin-right: .255em;
+    margin-left: 0;
+  }
+  .avatar-online::before, .avatar-offline::before, .avatar-away::before {
+    left: 0;
+    right: unset;
+  }
+  .badge {
+    margin-left: unset;
+    margin-right: auto;
+  }
+  .nav-pills.nav-pills-no-bd li{
+    margin-left: unset !important;
+    margin-right: 15px;
+  }
+  .nav-pills.nav-pills-no-bd li:first-child {
+    margin-right: 0;
+  }
+  // .nav-pills > li:first-child > .nav-link {
+  //   border-radius: 0 4px 4px 0 !important;
+  // }
+  // .nav-pills > li:last-child > .nav-link {
+  //   border-radius: 4px 0 0 4px !important;
+  // }
+  .input-group>.custom-select:first-child, .input-group>.form-control:first-child{
+    border-radius: 0 .25rem .25rem 0 !important;
+  }
+  .input-group>.input-group-append>.btn, .input-group>.input-group-append>.input-group-text, .input-group>.input-group-prepend:first-child>.btn:not(:first-child), .input-group>.input-group-prepend:first-child>.input-group-text:not(:first-child), .input-group>.input-group-prepend:not(:first-child)>.btn, .input-group>.input-group-prepend:not(:first-child)>.input-group-text{
+    border-radius: .25rem 0 0 .25rem !important;
+  }
+  .btn-group>.btn-group:first-child>.btn, .btn-group>.btn:first-child:not(.dropdown-toggle) {
+    border-radius: 0 3px 3px 0 !important;
+  }
+  .btn-group>.btn-group:last-child>.btn, .btn-group>.btn:last-child {
+    border-radius: 3px 0 0 3px !important;
+  }
+  .btn-group .btn+.btn, .btn-group .btn+.btn-group, .btn-group .btn-group+.btn, .btn-group .btn-group+.btn-group, .btn-group-vertical .btn+.btn, .btn-group-vertical .btn+.btn-group, .btn-group-vertical .btn-group+.btn, .btn-group-vertical .btn-group+.btn-group {
+    margin-right: -1px;
+    margin-left: unset;
+  }
+  .activity-feed .feed-item {
+    border-left-width: 0;
+    border-right: 2px solid #e4e8eb;
+    padding-right: 30px;
+    padding-left: 0;
+    &:after {
+      left: unset;
+      right: -7px;
+    }
+  }
+  .dropdown-menu {
+    text-align: right;
+  }
+  .pagination {
+    padding-right: 0;
+  }
+  .notif-box .notif-center a .notif-content, .messages-notif-box .notif-center a .notif-content {
+    padding: 10px 0px 10px 15px;
+  }
+  .avatar-group .avatar + .avatar {
+    margin-left: unset;
+    margin-right: -.75rem;
+  }
+  .html-legend li span {
+    margin-right: 0;
+    margin-left: 10px;
+  }
+  .custom-control.custom-radio, .custom-control.custom-checkbox {
+    padding-left: 0;
+    padding-right: 2em;
+  }
+  .custom-control-label{
+    &::before, &::after{
+      left: 0;
+      right: -1.5rem;
+    }
+  }
+  .toggle-off.btn {
+    padding-left: 42px;
+  }
+  .tasks-wrapper .tasks-content .tasks-list li {
+    .custom-control.custom-checkbox {
+      margin-left: 50px !important;
+      margin-right: 0 !important;
+    }
+    .task-action {
+      right: unset;
+      left: 0;
+    }
+  }
+  .settings-wrapper .settings-content .settings-list {
+    padding-right: 0;
+  }
+  .settings-wrapper .settings-content .settings-list li .item-control {
+    float: left;
+  }
+  .page-with-aside .page-aside .aside-nav .nav > li > a i{
+    margin-left: 15px;
+    margin-right: 0;
+  }
+  .mail-wrapper .mail-content .inbox-body .email-list .email-list-item .email-list-detail .date .paperclip{
+    padding-right: 0;
+    padding-left: 4px;
+  }
+  .mail-wrapper .mail-content .inbox-body .email-list .email-list-item .email-list-actions .custom-checkbox {
+    margin-left: 0;
+    margin-right: 25px;
+  }
+  .mail-wrapper .mail-content .email-sender .avatar{
+    padding-right: 0;
+    padding-left: 12px;
+  }
+  .mail-wrapper .mail-content .email-head .controls > a:last-child{
+    padding-right: 5px;
+    padding-left: 0;
+  }
+  .mail-wrapper .mail-content .email-attachments ul{
+    padding-right: 0;
+  }
+}

@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>Kaiadmin Bootstrap 5 Admin Dashboard</title>
+    <meta
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no"
+      name="viewport"
+    />
+    <link rel="icon" href="../assets/img/kaiadmin/favicon.ico" type="image/x-icon" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <script src="../assets/js/plugin/webfont/webfont.min.js"></script>
+    <script>
+      WebFont.load({
+        google: { families: ["Public Sans:300,400,500,600,700"] },
+        custom: {
+          families: [
+            "Font Awesome 5 Solid",
+            "Font Awesome 5 Regular",
+            "Font Awesome 5 Brands",
+            "simple-line-icons",
+          ],
+          urls: ["../../assets/css/fonts.min.css"],
+        },
+        active: function () {
+          sessionStorage.fonts = true;
+        },
+      });
+    </script>
+
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../assets/css/plugins.min.css" />
+    <link rel="stylesheet" href="../assets/css/kaiadmin.min.css" />
+    <link href="../assets/styles.css" rel="stylesheet" />
+    <link href="../assets/prism.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- Sidebar -->
+      <div class="sidebar sidebar-style-2" data-background-color="white">
+        <div class="sidebar-logo">
+          <!-- Logo Header -->
+          <div class="logo-header" data-background-color="white">
+            <a href="../index.html" class="logo">
+              <img
+                src="../assets/img/kaiadmin/logo_dark.svg"
+                alt="navbar brand"
+                class="navbar-brand"
+                height="20"
+              />
+            </a>
+            <div class="nav-toggle">
+              <button class="btn btn-toggle toggle-sidebar">
+                <i class="gg-menu-right"></i>
+              </button>
+              <button class="btn btn-toggle sidenav-toggler">
+                <i class="gg-menu-left"></i>
+              </button>
+            </div>
+            <button class="topbar-toggler more">
+              <i class="gg-more-vertical-alt"></i>
+            </button>
+          </div>
+          <!-- End Logo Header -->
+        </div>
+        <div class="sidebar-wrapper scrollbar scrollbar-inner">
+          <div class="sidebar-content">
+            <ul class="nav nav-info">
+              <li class="nav-item">
+                <a href="../index.html">
+                  <i class="fas fa-home"></i>
+                  <p>Introduction</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  data-bs-toggle="collapse"
+                  href="#dashboard"
+                  class="collapsed"
+                  aria-expanded="false"
+                >
+                  <i class="fas fa-code"></i>
+                  <p>Getting Started</p>
+                  <span class="caret"></span>
+                </a>
+                <div class="collapse" id="dashboard">
+                  <ul class="nav nav-collapse">
+                    <li>
+                      <a href="../getting-started1.html">
+                        <span class="sub-item">Dashboard 1</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="nav-section">
+                <span class="sidebar-mini-icon">
+                  <i class="fa fa-ellipsis-h"></i>
+                </span>
+                <h4 class="text-section">Components</h4>
+              </li>
+              <li class="nav-item">
+                <a href="alerts.html">
+                  <span class="letter-icon">A</span>
+                  <p>Alerts</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="avatars.html">
+                  <span class="letter-icon">Av</span>
+                  <p>Avatars</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="badge.html">
+                  <span class="letter-icon">Ba</span>
+                  <p>Badge</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="breadcrumb.html">
+                  <span class="letter-icon">Bc</span>
+                  <p>Breadcrumb</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="buttons.html">
+                  <span class="letter-icon">Bt</span>
+                  <p>Buttons</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="card.html">
+                  <span class="letter-icon">C</span>
+                  <p>Card</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="collapse.html">
+                  <span class="letter-icon">Co</span>
+                  <p>Collapse</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="colors.html">
+                  <span class="letter-icon">Cl</span>
+                  <p>Colors</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="dropdowns.html">
+                  <span class="letter-icon">D</span>
+                  <p>Dropdowns</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="forms.html">
+                  <span class="letter-icon">F</span>
+                  <p>Forms</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="layoutsbackground.html">
+                  <span class="letter-icon">L</span>
+                  <p>Layouts Background</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="modal.html">
+                  <span class="letter-icon">M</span>
+                  <p>Modal</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="navs.html">
+                  <span class="letter-icon">N</span>
+                  <p>Navs</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="navbar.html">
+                  <span class="letter-icon">Nb</span>
+                  <p>Navbar</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="pagination.html">
+                  <span class="letter-icon">Pa</span>
+                  <p>Pagination</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="popovers.html">
+                  <span class="letter-icon">Po</span>
+                  <p>Popovers</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="progress.html">
+                  <span class="letter-icon">Pr</span>
+                  <p>Progress</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="spinners.html">
+                  <span class="letter-icon">Sp</span>
+                  <p>Spinners</p>
+                </a>
+              </li>
+              <li class="nav-item active">
+                <a href="spinners.html">
+                  <span class="letter-icon">Sp</span>
+                  <p>Spinners</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="tables.html">
+                  <span class="letter-icon">T</span>
+                  <p>Tables</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="tooltips.html">
+                  <span class="letter-icon">To</span>
+                  <p>Tooltips</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="typography.html">
+                  <span class="letter-icon">Ty</span>
+                  <p>Typography</p>
+                </a>
+              </li>
+
+              <li class="nav-section">
+                <span class="sidebar-mini-icon">
+                  <i class="fa fa-ellipsis-h"></i>
+                </span>
+                <h4 class="text-section">Plugins</h4>
+              </li>
+              <li class="nav-item">
+                <a href="../plugins/chart.html">
+                  <span class="letter-icon">C</span>
+                  <p>Chart.js</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="../plugins/chartcircle.html">
+                  <span class="letter-icon">Cc</span>
+                  <p>Chart Circle</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="../plugins/animate.html">
+                  <span class="letter-icon">Cs</span>
+                  <p>CSS Animate</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="../plugins/datatables.html">
+                  <span class="letter-icon">Da</span>
+                  <p>Datatables</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="../plugins/jsvectormap.html">
+                  <span class="letter-icon">Jv</span>
+                  <p>Jsvectormap</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="../plugins/scrollbar.html">
+                  <span class="letter-icon">Js</span>
+                  <p>Jquery Scrollbar</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="../plugins/notify.html">
+                  <span class="letter-icon">N</span>
+                  <p>Notify</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="../plugins/sweetalert.html">
+                  <span class="letter-icon">Sa</span>
+                  <p>Sweet Alert</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="../plugins/sparkline.html">
+                  <span class="letter-icon">Sp</span>
+                  <p>Sparkline</p>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- End Sidebar -->
+
+      <div class="main-panel">
+        <div class="main-header">
+          <div class="main-header-logo">
+            <!-- Logo Header -->
+            <div class="logo-header" data-background-color="white">
+              <a href="../index.html" class="logo">
+                <img
+                  src="../assets/img/kaiadmin/logo_dark.svg"
+                  alt="navbar brand"
+                  class="navbar-brand"
+                  height="20"
+                />
+              </a>
+              <div class="nav-toggle">
+                <button class="btn btn-toggle toggle-sidebar">
+                  <i class="gg-menu-right"></i>
+                </button>
+                <button class="btn btn-toggle sidenav-toggler">
+                  <i class="gg-menu-left"></i>
+                </button>
+              </div>
+              <button class="topbar-toggler more">
+                <i class="gg-more-vertical-alt"></i>
+              </button>
+            </div>
+            <!-- End Logo Header -->
+          </div>
+          <nav class="navbar navbar-header navbar-expand-lg" data-background-color="dark">
+            <div class="container-fluid">
+              <ul class="navbar-nav topbar-nav ms-md-auto align-items-center">
+                <li class="nav-item">
+                  <a href="../../examples/demo1" class="nav-link"> Live Preview </a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+        <div class="content content-documentation">
+          <div class="container-fluid">
+            <div class="card card-documentation">
+              <div class="card-header">
+                <h4>Spinners</h4>
+                <p class="mb-0 op-8">
+                  Indicate the loading state of a component or page with Bootstrap spinners, built
+                  entirely with HTML, CSS, and no JavaScript.
+                </p>
+              </div>
+              <div class="card-body">
+                <div class="table-content">
+                  <span class="title">Table of Content</span>
+                  <ul>
+                    <li>
+                      <a href="#borderspinner">Border Spinner</a>
+                      <ol>
+                        <li>
+                          <a href="#borderspinnervariations">Variations</a>
+                        </li>
+                      </ol>
+                    </li>
+                    <li>
+                      <a href="#growingspinner">Growing Spinner</a>
+                      <ol>
+                        <li>
+                          <a href="#growingspinnervariations">Variations</a>
+                        </li>
+                      </ol>
+                    </li>
+                  </ul>
+                </div>
+                <div class="subcontent">
+                  <h4 class="subcontent-title" id="borderspinner"><span>Border Spinner</span></h4>
+                  <div class="bd-example">
+                    <div class="demo-spinner">
+                      <div
+                        class="spinner-border text-primary"
+                        style="width: 2.5rem; height: 2.5rem"
+                        role="status"
+                      >
+                        <span class="visually-hidden">Loading...</span>
+                      </div>
+                      <div class="spinner-border text-primary" role="status">
+                        <span class="visually-hidden">Loading...</span>
+                      </div>
+                      <div class="spinner-border spinner-border-sm text-primary" role="status">
+                        <span class="visually-hidden">Loading...</span>
+                      </div>
+                      <button class="btn btn-primary" type="button" disabled>
+                        <span class="spinner-border spinner-border-sm" aria-hidden="true"></span>
+                        <span class="visually-hidden" role="status">Loading...</span>
+                      </button>
+                      <button class="btn btn-primary" type="button" disabled>
+                        <span class="spinner-border spinner-border-sm" aria-hidden="true"></span>
+                        <span role="status">Loading...</span>
+                      </button>
+                    </div>
+                  </div>
+                  <pre class="language-markup">
+                    <code class="language-markup">
+                      &lt;div class=&quot;demo-spinner&quot;&gt;
+                      &lt;div
+                        class=&quot;spinner-border text-primary&quot;
+                        style=&quot;width: 2.5rem; height: 2.5rem&quot;
+                        role=&quot;status&quot;
+                      &gt;
+                        &lt;span class=&quot;visually-hidden&quot;&gt;Loading...&lt;/span&gt;
+                      &lt;/div&gt;
+                      &lt;div class=&quot;spinner-border text-primary&quot; role=&quot;status&quot;&gt;
+                        &lt;span class=&quot;visually-hidden&quot;&gt;Loading...&lt;/span&gt;
+                      &lt;/div&gt;
+                      &lt;div class=&quot;spinner-border spinner-border-sm text-primary&quot; role=&quot;status&quot;&gt;
+                        &lt;span class=&quot;visually-hidden&quot;&gt;Loading...&lt;/span&gt;
+                      &lt;/div&gt;
+                      &lt;button class=&quot;btn btn-primary&quot; type=&quot;button&quot; disabled&gt;
+                        &lt;span class=&quot;spinner-border spinner-border-sm&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;
+                        &lt;span class=&quot;visually-hidden&quot; role=&quot;status&quot;&gt;Loading...&lt;/span&gt;
+                      &lt;/button&gt;
+                      &lt;button class=&quot;btn btn-primary&quot; type=&quot;button&quot; disabled&gt;
+                        &lt;span class=&quot;spinner-border spinner-border-sm&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;
+                        &lt;span role=&quot;status&quot;&gt;Loading...&lt;/span&gt;
+                      &lt;/button&gt;
+                    &lt;/div&gt;
+                    </code>
+                  </pre>
+
+                  <h5 id="borderspinnervariations">Variations</h5>
+                  <p>
+                    Using Bootstrap’s typical naming structure, you can create colored loaders
+                    depending on your needs.
+                  </p>
+                  <div class="bd-example">
+                    <div class="demo-spinner">
+                      <div class="spinner-border text-primary" role="status">
+                        <span class="sr-only">Loading...</span>
+                      </div>
+                      <div class="spinner-border text-secondary" role="status">
+                        <span class="sr-only">Loading...</span>
+                      </div>
+                      <div class="spinner-border text-success" role="status">
+                        <span class="sr-only">Loading...</span>
+                      </div>
+                      <div class="spinner-border text-danger" role="status">
+                        <span class="sr-only">Loading...</span>
+                      </div>
+                      <div class="spinner-border text-warning" role="status">
+                        <span class="sr-only">Loading...</span>
+                      </div>
+                      <div class="spinner-border text-info" role="status">
+                        <span class="sr-only">Loading...</span>
+                      </div>
+                      <div class="spinner-border text-muted" role="status">
+                        <span class="sr-only">Loading...</span>
+                      </div>
+                      <div class="spinner-border text-dark" role="status">
+                        <span class="sr-only">Loading...</span>
+                      </div>
+                    </div>
+                  </div>
+                  <pre class="language-markup">
+                    <code class="language-markup">
+                      &lt;div class=&quot;demo-spinner&quot;&gt;
+                      &lt;div class=&quot;spinner-border text-primary&quot; role=&quot;status&quot;&gt;
+                        &lt;span class=&quot;sr-only&quot;&gt;Loading...&lt;/span&gt;
+                      &lt;/div&gt;
+                      &lt;div class=&quot;spinner-border text-secondary&quot; role=&quot;status&quot;&gt;
+                        &lt;span class=&quot;sr-only&quot;&gt;Loading...&lt;/span&gt;
+                      &lt;/div&gt;
+                      &lt;div class=&quot;spinner-border text-success&quot; role=&quot;status&quot;&gt;
+                        &lt;span class=&quot;sr-only&quot;&gt;Loading...&lt;/span&gt;
+                      &lt;/div&gt;
+                      &lt;div class=&quot;spinner-border text-danger&quot; role=&quot;status&quot;&gt;
+                        &lt;span class=&quot;sr-only&quot;&gt;Loading...&lt;/span&gt;
+                      &lt;/div&gt;
+                      &lt;div class=&quot;spinner-border text-warning&quot; role=&quot;status&quot;&gt;
+                        &lt;span class=&quot;sr-only&quot;&gt;Loading...&lt;/span&gt;
+                      &lt;/div&gt;
+                      &lt;div class=&quot;spinner-border text-info&quot; role=&quot;status&quot;&gt;
+                        &lt;span class=&quot;sr-only&quot;&gt;Loading...&lt;/span&gt;
+                      &lt;/div&gt;
+                      &lt;div class=&quot;spinner-border text-muted&quot; role=&quot;status&quot;&gt;
+                        &lt;span class=&quot;sr-only&quot;&gt;Loading...&lt;/span&gt;
+                      &lt;/div&gt;
+                      &lt;div class=&quot;spinner-border text-dark&quot; role=&quot;status&quot;&gt;
+                        &lt;span class=&quot;sr-only&quot;&gt;Loading...&lt;/span&gt;
+                      &lt;/div&gt;
+                    &lt;/div&gt;
+                    </code>
+                  </pre>
+                </div>
+                <div class="subcontent">
+                  <h4 class="subcontent-title" id="growingspinner"><span>Growing Spinner</span></h4>
+                  <div class="bd-example">
+                    <div class="demo-spinner">
+                      <div
+                        class="spinner-grow text-primary"
+                        style="width: 2.5rem; height: 2.5rem"
+                        role="status"
+                      >
+                        <span class="visually-hidden">Loading...</span>
+                      </div>
+                      <div class="spinner-grow text-primary" role="status">
+                        <span class="visually-hidden">Loading...</span>
+                      </div>
+                      <div class="spinner-grow spinner-grow-sm text-primary" role="status">
+                        <span class="visually-hidden">Loading...</span>
+                      </div>
+                      <button class="btn btn-primary" type="button" disabled>
+                        <span class="spinner-grow spinner-grow-sm" aria-hidden="true"></span>
+                        <span class="visually-hidden" role="status">Loading...</span>
+                      </button>
+                      <button class="btn btn-primary" type="button" disabled>
+                        <span class="spinner-grow spinner-grow-sm" aria-hidden="true"></span>
+                        <span role="status">Loading...</span>
+                      </button>
+                    </div>
+                  </div>
+                  <pre class="language-markup">
+                    <code class="language-markup">
+                      &lt;div class=&quot;demo-spinner&quot;&gt;
+                      &lt;div
+                        class=&quot;spinner-grow text-primary&quot;
+                        style=&quot;width: 2.5rem; height: 2.5rem&quot;
+                        role=&quot;status&quot;
+                      &gt;
+                        &lt;span class=&quot;visually-hidden&quot;&gt;Loading...&lt;/span&gt;
+                      &lt;/div&gt;
+                      &lt;div class=&quot;spinner-grow text-primary&quot; role=&quot;status&quot;&gt;
+                        &lt;span class=&quot;visually-hidden&quot;&gt;Loading...&lt;/span&gt;
+                      &lt;/div&gt;
+                      &lt;div class=&quot;spinner-grow spinner-grow-sm text-primary&quot; role=&quot;status&quot;&gt;
+                        &lt;span class=&quot;visually-hidden&quot;&gt;Loading...&lt;/span&gt;
+                      &lt;/div&gt;
+                      &lt;button class=&quot;btn btn-primary&quot; type=&quot;button&quot; disabled&gt;
+                        &lt;span class=&quot;spinner-grow spinner-grow-sm&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;
+                        &lt;span class=&quot;visually-hidden&quot; role=&quot;status&quot;&gt;Loading...&lt;/span&gt;
+                      &lt;/button&gt;
+                      &lt;button class=&quot;btn btn-primary&quot; type=&quot;button&quot; disabled&gt;
+                        &lt;span class=&quot;spinner-grow spinner-grow-sm&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;
+                        &lt;span role=&quot;status&quot;&gt;Loading...&lt;/span&gt;
+                      &lt;/button&gt;
+                    &lt;/div&gt;
+                    </code>
+                  </pre>
+
+                  <h5 id="growingspinnervariations">Variations</h5>
+                  <p>
+                    Using Bootstrap’s typical naming structure, you can create colored loaders
+                    depending on your needs.
+                  </p>
+                  <div class="bd-example">
+                    <div class="demo-spinner">
+                      <div class="spinner-grow text-primary" role="status">
+                        <span class="sr-only">Loading...</span>
+                      </div>
+                      <div class="spinner-grow text-secondary" role="status">
+                        <span class="sr-only">Loading...</span>
+                      </div>
+                      <div class="spinner-grow text-success" role="status">
+                        <span class="sr-only">Loading...</span>
+                      </div>
+                      <div class="spinner-grow text-danger" role="status">
+                        <span class="sr-only">Loading...</span>
+                      </div>
+                      <div class="spinner-grow text-warning" role="status">
+                        <span class="sr-only">Loading...</span>
+                      </div>
+                      <div class="spinner-grow text-info" role="status">
+                        <span class="sr-only">Loading...</span>
+                      </div>
+                      <div class="spinner-grow text-muted" role="status">
+                        <span class="sr-only">Loading...</span>
+                      </div>
+                      <div class="spinner-grow text-dark" role="status">
+                        <span class="sr-only">Loading...</span>
+                      </div>
+                    </div>
+                  </div>
+                  <pre class="language-markup">
+                    <code class="language-markup">
+                      &lt;div class=&quot;demo-spinner&quot;&gt;
+                      &lt;div class=&quot;spinner-grow text-primary&quot; role=&quot;status&quot;&gt;
+                        &lt;span class=&quot;sr-only&quot;&gt;Loading...&lt;/span&gt;
+                      &lt;/div&gt;
+                      &lt;div class=&quot;spinner-grow text-secondary&quot; role=&quot;status&quot;&gt;
+                        &lt;span class=&quot;sr-only&quot;&gt;Loading...&lt;/span&gt;
+                      &lt;/div&gt;
+                      &lt;div class=&quot;spinner-grow text-success&quot; role=&quot;status&quot;&gt;
+                        &lt;span class=&quot;sr-only&quot;&gt;Loading...&lt;/span&gt;
+                      &lt;/div&gt;
+                      &lt;div class=&quot;spinner-grow text-danger&quot; role=&quot;status&quot;&gt;
+                        &lt;span class=&quot;sr-only&quot;&gt;Loading...&lt;/span&gt;
+                      &lt;/div&gt;
+                      &lt;div class=&quot;spinner-grow text-warning&quot; role=&quot;status&quot;&gt;
+                        &lt;span class=&quot;sr-only&quot;&gt;Loading...&lt;/span&gt;
+                      &lt;/div&gt;
+                      &lt;div class=&quot;spinner-grow text-info&quot; role=&quot;status&quot;&gt;
+                        &lt;span class=&quot;sr-only&quot;&gt;Loading...&lt;/span&gt;
+                      &lt;/div&gt;
+                      &lt;div class=&quot;spinner-grow text-muted&quot; role=&quot;status&quot;&gt;
+                        &lt;span class=&quot;sr-only&quot;&gt;Loading...&lt;/span&gt;
+                      &lt;/div&gt;
+                      &lt;div class=&quot;spinner-grow text-dark&quot; role=&quot;status&quot;&gt;
+                        &lt;span class=&quot;sr-only&quot;&gt;Loading...&lt;/span&gt;
+                      &lt;/div&gt;
+                    &lt;/div&gt;
+                    </code>
+                  </pre>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="../assets/js/core/jquery-3.7.1.min.js"></script>
+  <script src="../assets/js/core/popper.min.js"></script>
+  <script src="../assets/js/core/bootstrap.min.js"></script>
+  <script src="../assets/js/plugin/jquery-scrollbar/jquery.scrollbar.min.js"></script>
+  <script src="../assets/js/kaiadmin.min.js"></script>
+  <script src="../assets/prism.js"></script>
+  <script src="../assets/prism-normalize-whitespace.min.js"></script>
+  <script type="text/javascript">
+    // Optional
+    Prism.plugins.NormalizeWhitespace.setDefaults({
+      "remove-trailing": true,
+      "remove-indent": true,
+      "left-trim": true,
+      "right-trim": true,
+    });
+
+    // handle links with @href started with '#' only
+    $(document).on("click", 'a[href^="#"]', function (e) {
+      // target element id
+      var id = $(this).attr("href");
+
+      // target element
+      var $id = $(id);
+      if ($id.length === 0) {
+        return;
+      }
+
+      // prevent standard hash navigation (avoid blinking in IE)
+      e.preventDefault();
+
+      // top position relative to the document
+      var pos = $id.offset().top - 80;
+
+      // animated top scrolling
+      $("body, html").animate({ scrollTop: pos });
+    });
+  </script>
+</html>

@@ -1,0 +1,23 @@
+.main-header {
+  background: $white-color;
+  min-height: 60px;
+  width: calc(100% - 250px);
+  position: fixed;
+  z-index: 1001;
+  .navbar-header {
+    min-height: 70px;
+    .btn-toggle {
+      margin-right: 30px;
+      margin-left: 20px;
+    }
+  }
+}
+
+#search-nav {
+  flex: 1;
+  max-width: 300px;
+  transition: all .4s;
+  &.focus {
+    max-width: 400px;
+  }
+}

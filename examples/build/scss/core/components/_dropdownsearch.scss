@@ -1,0 +1,28 @@
+/*     Dropdown Search     */
+
+.dropdown-search {
+	min-width: 350px;
+	padding: 5px 0;
+	.nav-search {
+		.input-group{
+			background: transparent !important;
+			box-shadow: none !important;
+			border: 0 !important;
+			.form-control {
+				color: inherit !important;
+				&::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+					color: #bfbfbf !important;
+				}
+				&::-moz-placeholder { /* Firefox 19+ */
+					color: #bfbfbf !important;
+				}
+				&:-ms-input-placeholder { /* IE 10+ */
+					color: #bfbfbf !important;
+				}
+				&:-moz-placeholder { /* Firefox 18- */
+					color: #bfbfbf !important;
+				}
+			}
+		}
+	}
+}

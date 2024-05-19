@@ -1,0 +1,49 @@
+/*     Pagination     */
+
+.pagination {
+  > li {
+    > a, &:first-child > a, &:last-child > a, > span, &:first-child > span, &:last-child > span {
+      border-radius: 100px !important;
+      margin: 0 2px;
+      color: #777777;
+      border-color: #ddd;
+    }
+    > a {
+      // width: 28px;
+      // height: 28px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+  
+  @mixin pagination-active-state($color) {
+    > a, &:first-child > a, &:last-child > a, > span, &:first-child > span, &:last-child > span {
+      background: $color;
+      border-color: $color;
+      color: $white-color;
+    }
+  }
+  
+  &.pg-black > li.active {
+    @include pagination-active-state($black-color);
+  }
+  &.pg-primary > li.active {
+    @include pagination-active-state($primary-color);
+  }
+  &.pg-secondary > li.active {
+    @include pagination-active-state($secondary-color);
+  }
+  &.pg-info > li.active {
+    @include pagination-active-state($info-color);
+  }
+  &.pg-success > li.active {
+    @include pagination-active-state($success-color);
+  }
+  &.pg-warning > li.active {
+    @include pagination-active-state($warning-color);
+  }
+  &.pg-danger > li.active {
+    @include pagination-active-state($danger-color);
+  }
+}

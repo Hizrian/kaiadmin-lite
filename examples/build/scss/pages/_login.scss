@@ -1,0 +1,115 @@
+/*     	Login     */
+.login {
+	background: #efefee;
+	.wrapper{
+		&.wrapper-login {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: unset;
+			padding: 15px;
+			.container-login, .container-signup {
+				width: 400px;
+				padding: 60px 22px;
+				border-radius: 5px;
+				&:not(.container-transparent) {
+					background: $white-color;
+					-webkit-box-shadow: 0 0.75rem 1.5rem rgba(18, 38, 63, 0.03);
+					-moz-box-shadow: 0 0.75rem 1.5rem rgba(18, 38, 63, 0.03);
+					box-shadow: 0 0.75rem 1.5rem rgba(18, 38, 63, 0.03);
+					border: 1px solid #ebecec;
+				}
+				h3 {
+					font-size: 20px;
+					font-weight: $font-weight-bold;
+					margin-bottom: 24px;				
+				}
+				.form-sub{
+					align-items: center;
+					justify-content: space-between;
+					padding: 8px 10px;
+				}
+				.btn-login{
+					padding: 15px 0;
+					min-width: 135px;
+				}
+				.form-action {
+					text-align: center;
+					padding: 25px 10px 0;
+				}
+				.form-action-d-flex{
+					display: flex;
+					align-items: center;
+					justify-content: space-between;
+				}
+				.login-account {
+					padding-top: 16px;
+					font-size: 14px;
+					text-align: center;
+				}
+			}
+			.container-signup {
+				.form-action {
+					display: flex;
+					justify-content: space-between;
+				}
+			}
+		}
+		&.wrapper-login-full {
+			justify-content: unset;
+			align-items: unset;
+			padding: 0 !important;
+		}
+	}
+	.login-aside {
+		padding: 25px;
+		.title {
+			font-size: 36px;
+		}
+		.subtitle {
+			font-size: 18px;
+		}
+	}
+	.show-password {
+		position: absolute;
+		right: 20px;
+		top: 50%;
+		transform: translateY(-50%);
+		font-size: 20px;
+		cursor: pointer;
+	}
+	.custom-control-label{
+		white-space: nowrap;
+	}
+}
+
+@media screen and (max-width: 576px){
+	.form-action-d-flex{
+		flex-direction: column;
+		align-items: start !important;
+	}
+	.login {
+		.wrapper-login-full {
+			flex-direction: column;
+		}
+		.login-aside {
+			width: 100% !important;
+			.title {
+				font-size: 24px;
+			}
+			.subtitle {
+				font-size: 16px;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 399px){
+	.wrapper-login {
+		padding: 15px !important;
+	}
+	.container-login{
+		width: 100% !important;
+		padding: 60px 15px !important;
+	}
+}

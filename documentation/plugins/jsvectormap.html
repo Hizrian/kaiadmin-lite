@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>Kaiadmin Bootstrap 5 Admin Dashboard</title>
+    <meta
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no"
+      name="viewport"
+    />
+    <link rel="icon" href="../assets/img/kaiadmin/favicon.ico" type="image/x-icon" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <script src="../assets/js/plugin/webfont/webfont.min.js"></script>
+    <script>
+      WebFont.load({
+        google: { families: ["Public Sans:300,400,500,600,700"] },
+        custom: {
+          families: [
+            "Font Awesome 5 Solid",
+            "Font Awesome 5 Regular",
+            "Font Awesome 5 Brands",
+            "simple-line-icons",
+          ],
+          urls: ["../../assets/css/fonts.min.css"],
+        },
+        active: function () {
+          sessionStorage.fonts = true;
+        },
+      });
+    </script>
+
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../assets/css/plugins.min.css" />
+    <link rel="stylesheet" href="../assets/css/kaiadmin.min.css" />
+    <link href="../assets/styles.css" rel="stylesheet" />
+    <link href="../assets/prism.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- Sidebar -->
+      <div class="sidebar sidebar-style-2" data-background-color="white">
+        <div class="sidebar-logo">
+          <!-- Logo Header -->
+          <div class="logo-header" data-background-color="white">
+            <a href="../index.html" class="logo">
+              <img
+                src="../assets/img/kaiadmin/logo_dark.svg"
+                alt="navbar brand"
+                class="navbar-brand"
+                height="20"
+              />
+            </a>
+            <div class="nav-toggle">
+              <button class="btn btn-toggle toggle-sidebar">
+                <i class="gg-menu-right"></i>
+              </button>
+              <button class="btn btn-toggle sidenav-toggler">
+                <i class="gg-menu-left"></i>
+              </button>
+            </div>
+            <button class="topbar-toggler more">
+              <i class="gg-more-vertical-alt"></i>
+            </button>
+          </div>
+          <!-- End Logo Header -->
+        </div>
+        <div class="sidebar-wrapper scrollbar scrollbar-inner">
+          <div class="sidebar-content">
+            <ul class="nav nav-info">
+              <li class="nav-item">
+                <a href="../index.html">
+                  <i class="fas fa-home"></i>
+                  <p>Introduction</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  data-bs-toggle="collapse"
+                  href="#dashboard"
+                  class="collapsed"
+                  aria-expanded="false"
+                >
+                  <i class="fas fa-code"></i>
+                  <p>Getting Started</p>
+                  <span class="caret"></span>
+                </a>
+                <div class="collapse" id="dashboard">
+                  <ul class="nav nav-collapse">
+                    <li>
+                      <a href="../getting-started1.html">
+                        <span class="sub-item">Dashboard 1</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="nav-section">
+                <span class="sidebar-mini-icon">
+                  <i class="fa fa-ellipsis-h"></i>
+                </span>
+                <h4 class="text-section">Components</h4>
+              </li>
+              <li class="nav-item">
+                <a href="../components/alerts.html">
+                  <span class="letter-icon">A</span>
+                  <p>Alerts</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="../components/avatars.html">
+                  <span class="letter-icon">Av</span>
+                  <p>Avatars</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="../components/badge.html">
+                  <span class="letter-icon">Ba</span>
+                  <p>Badge</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="../components/breadcrumb.html">
+                  <span class="letter-icon">Bc</span>
+                  <p>Breadcrumb</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="../components/buttons.html">
+                  <span class="letter-icon">Bt</span>
+                  <p>Buttons</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="../components/card.html">
+                  <span class="letter-icon">C</span>
+                  <p>Card</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="../components/collapse.html">
+                  <span class="letter-icon">Co</span>
+                  <p>Collapse</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="../components/colors.html">
+                  <span class="letter-icon">Cl</span>
+                  <p>Colors</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="../components/dropdowns.html">
+                  <span class="letter-icon">D</span>
+                  <p>Dropdowns</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="../components/forms.html">
+                  <span class="letter-icon">F</span>
+                  <p>Forms</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="../components/layoutsbackground.html">
+                  <span class="letter-icon">L</span>
+                  <p>Layouts Background</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="../components/modal.html">
+                  <span class="letter-icon">M</span>
+                  <p>Modal</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="../components/navs.html">
+                  <span class="letter-icon">N</span>
+                  <p>Navs</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="../components/navbar.html">
+                  <span class="letter-icon">Nb</span>
+                  <p>Navbar</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="../components/pagination.html">
+                  <span class="letter-icon">Pa</span>
+                  <p>Pagination</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="../components/popovers.html">
+                  <span class="letter-icon">Po</span>
+                  <p>Popovers</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="../components/progress.html">
+                  <span class="letter-icon">Pr</span>
+                  <p>Progress</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="../components/spinners.html">
+                  <span class="letter-icon">Sp</span>
+                  <p>Spinners</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="../components/tables.html">
+                  <span class="letter-icon">T</span>
+                  <p>Tables</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="../components/tooltips.html">
+                  <span class="letter-icon">To</span>
+                  <p>Tooltips</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="../components/typography.html">
+                  <span class="letter-icon">Ty</span>
+                  <p>Typography</p>
+                </a>
+              </li>
+
+              <li class="nav-section">
+                <span class="sidebar-mini-icon">
+                  <i class="fa fa-ellipsis-h"></i>
+                </span>
+                <h4 class="text-section">Plugins</h4>
+              </li>
+              <li class="nav-item">
+                <a href="chart.html">
+                  <span class="letter-icon">C</span>
+                  <p>Chart.js</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="chartcircle.html">
+                  <span class="letter-icon">Cc</span>
+                  <p>Chart Circle</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="animate.html">
+                  <span class="letter-icon">Cs</span>
+                  <p>CSS Animate</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="datatables.html">
+                  <span class="letter-icon">Da</span>
+                  <p>Datatables</p>
+                </a>
+              </li>
+              <li class="nav-item active">
+                <a href="jsvectormap.html">
+                  <span class="letter-icon">Jv</span>
+                  <p>Jsvectormap</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="scrollbar.html">
+                  <span class="letter-icon">Js</span>
+                  <p>Jquery Scrollbar</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="notify.html">
+                  <span class="letter-icon">N</span>
+                  <p>Notify</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="sweetalert.html">
+                  <span class="letter-icon">Sa</span>
+                  <p>Sweet Alert</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="sparkline.html">
+                  <span class="letter-icon">Sp</span>
+                  <p>Sparkline</p>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- End Sidebar -->
+
+      <div class="main-panel">
+        <div class="main-header">
+          <div class="main-header-logo">
+            <!-- Logo Header -->
+            <div class="logo-header" data-background-color="white">
+              <a href="../index.html" class="logo">
+                <img
+                  src="../assets/img/kaiadmin/logo_dark.svg"
+                  alt="navbar brand"
+                  class="navbar-brand"
+                  height="20"
+                />
+              </a>
+              <div class="nav-toggle">
+                <button class="btn btn-toggle toggle-sidebar">
+                  <i class="gg-menu-right"></i>
+                </button>
+                <button class="btn btn-toggle sidenav-toggler">
+                  <i class="gg-menu-left"></i>
+                </button>
+              </div>
+              <button class="topbar-toggler more">
+                <i class="gg-more-vertical-alt"></i>
+              </button>
+            </div>
+            <!-- End Logo Header -->
+          </div>
+          <nav class="navbar navbar-header navbar-expand-lg" data-background-color="dark">
+            <div class="container-fluid">
+              <ul class="navbar-nav topbar-nav ms-md-auto align-items-center">
+                <li class="nav-item">
+                  <a href="../../examples/demo1" class="nav-link"> Live Preview </a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+        <div class="content content-documentation">
+			<div class="container-fluid">
+			  <div class="card card-documentation">
+				<div class="card-header">
+				  <h4>Jsvectormap</h4>
+				  <p class="mb-0 op-8">Jsvectormap is a lightweight JavaScript library for creating interactive maps and pretty data visualization, supports all modern browsers including IE9+. Read <a href="https://jvm-docs.vercel.app/docs/introduction">Full Documentation</a></a></p>
+				</div>
+				<div class="card-body">
+				  <div class="subcontent">
+            <h4 class="subcontent-title" id="examples"><span>Examples</span></h4>
+            <div class="bd-example">
+              <div class="mapcontainer">
+                <div id="world-map" class="w-100" style="height: 450px; background-color: transparent;"></div>
+              </div>
+            </div>
+
+            <pre class="language-markup">
+              <code class="language-markup">
+                &lt;div class=&quot;mapcontainer&quot;&gt;
+                  &lt;div id=&quot;world-map&quot; class=&quot;w-100&quot; style=&quot;height: 450px; background-color: transparent;&quot;&gt;&lt;/div&gt;
+                &lt;/div&gt;
+              </code>
+            </pre>
+
+            <pre class="language-markup">
+              <code class="language-markup">
+                var world_map = new jsVectorMap({
+                  selector: "#world-map",
+                  map: "world",
+                  zoomOnScroll: false,
+                  regionStyle: {
+                      hover: {
+                          fill: '#435ebe'
+                      }
+                  },
+                  markers: [
+                      {
+                          name: 'Indonesia',
+                          coords: [-6.229728, 106.6894311],
+                          style: {
+                              fill: '#435ebe'
+                          }
+                      },
+                      {
+                          name: 'United States',
+                          coords: [38.8936708, -77.1546604],
+                          style: {
+                              fill: '#28ab55'
+                          }
+                      },
+                      {
+                          name: 'Russia',
+                          coords: [55.5807481, 36.825129],
+                          style: {
+                              fill: '#f3616d'
+                          }
+                      },
+                      {
+                          name: 'China',
+                          coords: [39.9385466, 116.1172735]
+                      },
+                      {
+                          name: 'United Kingdom',
+                          coords: [51.5285582, -0.2416812]
+                      },
+                      {
+                          name: 'India',
+                          coords: [26.8851417, 75.6504721]
+                      },
+                      {
+                          name: 'Australia',
+                          coords: [-35.2813046, 149.124822]
+                      },
+                      {
+                          name: 'Brazil',
+                          coords: [-22.9140693, -43.5860681]
+                      },
+                      {
+                          name: 'Egypt',
+                          coords: [26.834955, 26.3823725]
+                      },
+                  ],
+                  onRegionTooltipShow(event, tooltip) {
+                      tooltip.css({ backgroundColor: '#435ebe' })
+                  }
+              });
+              </code>
+            </pre>
+          </div>
+				</div>
+			  </div>
+			</div>
+		  </div>
+      </div>
+    </div>
+  </body>
+  <script src="../assets/js/core/jquery-3.7.1.min.js"></script>
+  <script src="../assets/js/core/popper.min.js"></script>
+  <script src="../assets/js/core/bootstrap.min.js"></script>
+  <script src="../assets/js/plugin/jquery-scrollbar/jquery.scrollbar.min.js"></script>
+  <!-- jsvectormap -->
+	<script src="../assets/js/plugin/jsvectormap/jsvectormap.min.js"></script>
+	<script src="../assets/js/plugin/jsvectormap/world.js"></script>
+  <script src="../assets/js/kaiadmin.min.js"></script>
+  <script src="../assets/prism.js"></script>
+  <script src="../assets/prism-normalize-whitespace.min.js"></script>
+  <script type="text/javascript">
+    // Optional
+    Prism.plugins.NormalizeWhitespace.setDefaults({
+      "remove-trailing": true,
+      "remove-indent": true,
+      "left-trim": true,
+      "right-trim": true,
+    });
+
+    // handle links with @href started with '#' only
+    $(document).on("click", 'a[href^="#"]', function (e) {
+      // target element id
+      var id = $(this).attr("href");
+
+      // target element
+      var $id = $(id);
+      if ($id.length === 0) {
+        return;
+      }
+
+      // prevent standard hash navigation (avoid blinking in IE)
+      e.preventDefault();
+
+      // top position relative to the document
+      var pos = $id.offset().top - 80;
+
+      // animated top scrolling
+      $("body, html").animate({ scrollTop: pos });
+    });
+  </script>
+<script>
+	var world_map = new jsVectorMap({
+        selector: "#world-map",
+        map: "world",
+        zoomOnScroll: false,
+        regionStyle: {
+            hover: {
+                fill: '#435ebe'
+            }
+        },
+        markers: [
+            {
+                name: 'Indonesia',
+                coords: [-6.229728, 106.6894311],
+                style: {
+                    fill: '#435ebe'
+                }
+            },
+            {
+                name: 'United States',
+                coords: [38.8936708, -77.1546604],
+                style: {
+                    fill: '#28ab55'
+                }
+            },
+            {
+                name: 'Russia',
+                coords: [55.5807481, 36.825129],
+                style: {
+                    fill: '#f3616d'
+                }
+            },
+            {
+                name: 'China',
+                coords: [39.9385466, 116.1172735]
+            },
+            {
+                name: 'United Kingdom',
+                coords: [51.5285582, -0.2416812]
+            },
+            {
+                name: 'India',
+                coords: [26.8851417, 75.6504721]
+            },
+            {
+                name: 'Australia',
+                coords: [-35.2813046, 149.124822]
+            },
+            {
+                name: 'Brazil',
+                coords: [-22.9140693, -43.5860681]
+            },
+            {
+                name: 'Egypt',
+                coords: [26.834955, 26.3823725]
+            },
+        ],
+        onRegionTooltipShow(event, tooltip) {
+            tooltip.css({ backgroundColor: '#435ebe' })
+        }
+    });
+</script>
+</html>

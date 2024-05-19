@@ -1,0 +1,14 @@
+.tile {
+    width: 36px;
+    height: 36px;
+    font-size: 20px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 36px;
+	&:hover {
+		text-decoration: none;
+	}
+	&[class*="bg-"] {
+		color: #fff;
+	}
+}

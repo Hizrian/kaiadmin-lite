@@ -1,0 +1,300 @@
+// Menu
+
+.gg-menu {
+  transform: scale(var(--ggs, 1));
+  box-sizing: border-box;
+  position: relative;
+  display: block;
+  width: 20px;
+  height: 2px;
+  border-radius: 3px;
+  background: currentColor;
+
+  &::after, &::before {
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    width: 20px;
+    height: 2px;
+    border-radius: 3px;
+    background: currentColor;
+  }
+
+  &::after, &::before {
+    content: "";
+    position: absolute;
+    top: -6px;
+  }
+
+  &::after {
+    top: 6px;
+  }
+}
+
+// Menu Left
+
+.gg-menu-left {
+  transform: scale(var(--ggs, 1));
+  box-sizing: border-box;
+  position: relative;
+  display: block;
+  width: 20px;
+  height: 2px;
+  border-radius: 3px;
+  background: currentColor;
+
+  &::after, &::before {
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    width: 20px;
+    height: 2px;
+    border-radius: 3px;
+    background: currentColor;
+  }
+
+  &::after, &::before {
+    content: "";
+    position: absolute;
+    top: -6px;
+    width: 10px;
+  }
+
+  &::after {
+    top: 6px;
+    width: 14px;
+  }
+}
+
+// Menu Right
+
+.gg-menu-right {
+  transform: scale(var(--ggs, 1));
+  box-sizing: border-box;
+  position: relative;
+  display: block;
+  width: 20px;
+  height: 2px;
+  border-radius: 3px;
+  background: currentColor;
+
+  &::after, &::before {
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    width: 20px;
+    height: 2px;
+    border-radius: 3px;
+    background: currentColor;
+  }
+
+  &::after, &::before {
+    content: "";
+    position: absolute;
+    top: -6px;
+    right: 0;
+    width: 10px;
+  }
+
+  &::after {
+    top: 6px;
+    width: 14px;
+  }
+}
+
+// Menu Left & Right Hover 
+
+.gg-menu-left, .gg-menu-right {
+  &::after, &::before {
+    transition: all .2s;
+  } 
+  &:hover {
+    &::after, &::before {
+      width: 100%;
+    }
+  }
+}
+
+// Menu Round
+
+.gg-menu-round {
+  box-sizing: border-box;
+  position: relative;
+  display: block;
+  transform: scale(var(--ggs, 1));
+  width: 22px;
+  height: 22px;
+  border-radius: 24px;
+  border: 2px solid;
+
+  &::before {
+    content: "";
+    display: block;
+    box-sizing: border-box;
+    position: absolute;
+    width: 10px;
+    height: 2px;
+    background: currentColor;
+    border-radius: 3px;
+    top: 4px;
+    left: 4px;
+    box-shadow: 0 4px 0, 0 8px 0;
+  }
+}
+
+// Menu Boxed
+
+.gg-menu-boxed {
+  box-sizing: border-box;
+  position: relative;
+  display: block;
+  transform: scale(var(--ggs, 1));
+  width: 18px;
+  height: 18px;
+  border-radius: 3px;
+  border: 2px solid;
+
+  &::before {
+    content: "";
+    display: block;
+    box-sizing: border-box;
+    position: absolute;
+    width: 10px;
+    height: 2px;
+    background: currentColor;
+    border-radius: 3px;
+    top: 2px;
+    left: 2px;
+    box-shadow: 0 4px 0, 0 8px 0;
+  }
+}
+
+// More Vertical
+.gg-more-vertical-alt {
+  transform: scale(var(--ggs, 1));
+  box-sizing: border-box;
+  position: relative;
+  display: block;
+  width: 4px;
+  height: 4px;
+  background: currentColor;
+  border-radius: 100%;
+
+  &::after, &::before {
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    width: 4px;
+    height: 4px;
+    background: currentColor;
+    border-radius: 100%;
+  }
+
+  &::after, &::before {
+    content: "";
+    position: absolute;
+  }
+
+  &::after {
+    left: 0;
+    top: 6px;
+  }
+
+  &::before {
+    top: -6px;
+    right: 0;
+  }
+}
+
+// Close
+
+.gg-close {
+  box-sizing: border-box;
+  position: relative;
+  display: block;
+  transform: scale(var(--ggs, 1));
+  width: 22px;
+  height: 22px;
+  border: 2px solid transparent;
+  border-radius: 40px;
+
+  &::after, &::before {
+    content: "";
+    display: block;
+    box-sizing: border-box;
+    position: absolute;
+    width: 16px;
+    height: 2px;
+    background: currentColor;
+    transform: rotate(45deg);
+    border-radius: 5px;
+    top: 8px;
+    left: 1px;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+}
+
+// Close Round
+
+.gg-close-o {
+  box-sizing: border-box;
+  position: relative;
+  display: block;
+  transform: scale(var(--ggs, 1));
+  width: 22px;
+  height: 22px;
+  border: 2px solid;
+  border-radius: 40px;
+
+  &::after, &::before {
+    content: "";
+    display: block;
+    box-sizing: border-box;
+    position: absolute;
+    width: 12px;
+    height: 2px;
+    background: currentColor;
+    transform: rotate(45deg);
+    border-radius: 5px;
+    top: 8px;
+    left: 3px;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+}
+
+// Close Round
+
+.gg-close-r {
+  box-sizing: border-box;
+  position: relative;
+  display: block;
+  transform: scale(var(--ggs, 1));
+  width: 22px;
+  height: 22px;
+  border: 2px solid;
+  border-radius: 4px;
+
+  &::after, &::before {
+    content: "";
+    display: block;
+    box-sizing: border-box;
+    position: absolute;
+    width: 12px;
+    height: 2px;
+    background: currentColor;
+    transform: rotate(45deg);
+    border-radius: 5px;
+    top: 8px;
+    left: 3px;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+}

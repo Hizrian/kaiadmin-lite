@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>Kaiadmin Bootstrap 5 Admin Dashboard</title>
+    <meta
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no"
+      name="viewport"
+    />
+    <link rel="icon" href="../assets/img/kaiadmin/favicon.ico" type="image/x-icon" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <script src="../assets/js/plugin/webfont/webfont.min.js"></script>
+    <script>
+      WebFont.load({
+        google: { families: ["Public Sans:300,400,500,600,700"] },
+        custom: {
+          families: [
+            "Font Awesome 5 Solid",
+            "Font Awesome 5 Regular",
+            "Font Awesome 5 Brands",
+            "simple-line-icons",
+          ],
+          urls: ["../../assets/css/fonts.min.css"],
+        },
+        active: function () {
+          sessionStorage.fonts = true;
+        },
+      });
+    </script>
+
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../assets/css/plugins.min.css" />
+    <link rel="stylesheet" href="../assets/css/kaiadmin.min.css" />
+    <link href="../assets/styles.css" rel="stylesheet" />
+    <link href="../assets/prism.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- Sidebar -->
+      <div class="sidebar sidebar-style-2" data-background-color="white">
+        <div class="sidebar-logo">
+          <!-- Logo Header -->
+          <div class="logo-header" data-background-color="white">
+            <a href="../index.html" class="logo">
+              <img
+                src="../assets/img/kaiadmin/logo_dark.svg"
+                alt="navbar brand"
+                class="navbar-brand"
+                height="20"
+              />
+            </a>
+            <div class="nav-toggle">
+              <button class="btn btn-toggle toggle-sidebar">
+                <i class="gg-menu-right"></i>
+              </button>
+              <button class="btn btn-toggle sidenav-toggler">
+                <i class="gg-menu-left"></i>
+              </button>
+            </div>
+            <button class="topbar-toggler more">
+              <i class="gg-more-vertical-alt"></i>
+            </button>
+          </div>
+          <!-- End Logo Header -->
+        </div>
+        <div class="sidebar-wrapper scrollbar scrollbar-inner">
+          <div class="sidebar-content">
+            <ul class="nav nav-info">
+              <li class="nav-item">
+                <a href="../index.html">
+                  <i class="fas fa-home"></i>
+                  <p>Introduction</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  data-bs-toggle="collapse"
+                  href="#dashboard"
+                  class="collapsed"
+                  aria-expanded="false"
+                >
+                  <i class="fas fa-code"></i>
+                  <p>Getting Started</p>
+                  <span class="caret"></span>
+                </a>
+                <div class="collapse" id="dashboard">
+                  <ul class="nav nav-collapse">
+                    <li>
+                      <a href="../getting-started1.html">
+                        <span class="sub-item">Dashboard 1</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="nav-section">
+                <span class="sidebar-mini-icon">
+                  <i class="fa fa-ellipsis-h"></i>
+                </span>
+                <h4 class="text-section">Components</h4>
+              </li>
+              <li class="nav-item">
+                <a href="alerts.html">
+                  <span class="letter-icon">A</span>
+                  <p>Alerts</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="avatars.html">
+                  <span class="letter-icon">Av</span>
+                  <p>Avatars</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="badge.html">
+                  <span class="letter-icon">Ba</span>
+                  <p>Badge</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="breadcrumb.html">
+                  <span class="letter-icon">Bc</span>
+                  <p>Breadcrumb</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="buttons.html">
+                  <span class="letter-icon">Bt</span>
+                  <p>Buttons</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="card.html">
+                  <span class="letter-icon">C</span>
+                  <p>Card</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="collapse.html">
+                  <span class="letter-icon">Co</span>
+                  <p>Collapse</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="colors.html">
+                  <span class="letter-icon">Cl</span>
+                  <p>Colors</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="dropdowns.html">
+                  <span class="letter-icon">D</span>
+                  <p>Dropdowns</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="forms.html">
+                  <span class="letter-icon">F</span>
+                  <p>Forms</p>
+                </a>
+              </li>
+              <li class="nav-item active">
+                <a href="layoutsbackground.html">
+                  <span class="letter-icon">L</span>
+                  <p>Layouts Background</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="modal.html">
+                  <span class="letter-icon">M</span>
+                  <p>Modal</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="navs.html">
+                  <span class="letter-icon">N</span>
+                  <p>Navs</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="navbar.html">
+                  <span class="letter-icon">Nb</span>
+                  <p>Navbar</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="pagination.html">
+                  <span class="letter-icon">Pa</span>
+                  <p>Pagination</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="popovers.html">
+                  <span class="letter-icon">Po</span>
+                  <p>Popovers</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="progress.html">
+                  <span class="letter-icon">Pr</span>
+                  <p>Progress</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="spinners.html">
+                  <span class="letter-icon">Sp</span>
+                  <p>Spinners</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="tables.html">
+                  <span class="letter-icon">T</span>
+                  <p>Tables</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="tooltips.html">
+                  <span class="letter-icon">To</span>
+                  <p>Tooltips</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="typography.html">
+                  <span class="letter-icon">Ty</span>
+                  <p>Typography</p>
+                </a>
+              </li>
+
+              <li class="nav-section">
+                <span class="sidebar-mini-icon">
+                  <i class="fa fa-ellipsis-h"></i>
+                </span>
+                <h4 class="text-section">Plugins</h4>
+              </li>
+              <li class="nav-item">
+                <a href="../plugins/chart.html">
+                  <span class="letter-icon">C</span>
+                  <p>Chart.js</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="../plugins/chartcircle.html">
+                  <span class="letter-icon">Cc</span>
+                  <p>Chart Circle</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="../plugins/animate.html">
+                  <span class="letter-icon">Cs</span>
+                  <p>CSS Animate</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="../plugins/datatables.html">
+                  <span class="letter-icon">Da</span>
+                  <p>Datatables</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="../plugins/jsvectormap.html">
+                  <span class="letter-icon">Jv</span>
+                  <p>Jsvectormap</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="../plugins/scrollbar.html">
+                  <span class="letter-icon">Js</span>
+                  <p>Jquery Scrollbar</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="../plugins/notify.html">
+                  <span class="letter-icon">N</span>
+                  <p>Notify</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="../plugins/sweetalert.html">
+                  <span class="letter-icon">Sa</span>
+                  <p>Sweet Alert</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="../plugins/sparkline.html">
+                  <span class="letter-icon">Sp</span>
+                  <p>Sparkline</p>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- End Sidebar -->
+
+      <div class="main-panel">
+        <div class="main-header">
+          <div class="main-header-logo">
+            <!-- Logo Header -->
+            <div class="logo-header" data-background-color="white">
+              <a href="../index.html" class="logo">
+                <img
+                  src="../assets/img/kaiadmin/logo_dark.svg"
+                  alt="navbar brand"
+                  class="navbar-brand"
+                  height="20"
+                />
+              </a>
+              <div class="nav-toggle">
+                <button class="btn btn-toggle toggle-sidebar">
+                  <i class="gg-menu-right"></i>
+                </button>
+                <button class="btn btn-toggle sidenav-toggler">
+                  <i class="gg-menu-left"></i>
+                </button>
+              </div>
+              <button class="topbar-toggler more">
+                <i class="gg-more-vertical-alt"></i>
+              </button>
+            </div>
+            <!-- End Logo Header -->
+          </div>
+          <nav class="navbar navbar-header navbar-expand-lg" data-background-color="dark">
+            <div class="container-fluid">
+              <ul class="navbar-nav topbar-nav ms-md-auto align-items-center">
+                <li class="nav-item">
+                  <a href="../../examples/demo1" class="nav-link"> Live Preview </a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+        <div class="content content-documentation">
+          <div class="container-fluid">
+            <div class="card card-documentation">
+              <div class="card-header">
+                <h4>Layouts Background</h4>
+                <p class="mb-0 op-8">Kaiadmin Bootstrap - The dashboard has customizable layouts</p>
+              </div>
+              <div class="card-body">
+                <div class="subcontent">
+                  <p class="mt-3">
+                    Atlantis has layout sections whose background color can be customized.
+                  </p>
+                  <h4 class="subcontent-title" id="color"><span>Background Color</span></h4>
+                  <p>
+                    Change the color by adding attr <code>data-background-color="[color]" .</code>
+                  </p>
+                  <p>
+                    For <code>Body</code>'s Background the color options are White, Grey (<code
+                      >$grey2-color</code
+                    >
+                    and <code>$grey-color</code>).
+                  </p>
+                  <div class="bd-example">
+                    <div class="d-flex align-items-center mb-4">
+                      <div
+                        class="box-example me-4"
+                        style="background: #fff; border: 1px solid #eee"
+                      ></div>
+                      <div>
+                        <h6><strong>White</strong></h6>
+                        <code>data-background-color="bg2"</code>
+                      </div>
+                    </div>
+                    <div class="d-flex align-items-center mb-4">
+                      <div class="box-example bg-grey1 me-4" style="border: 1px solid #eee"></div>
+                      <div>
+                        <h6><strong>Grey 1</strong></h6>
+                        <code>data-background-color="bg1"</code>
+                      </div>
+                    </div>
+                    <div class="d-flex align-items-center mb-4">
+                      <div class="box-example bg-grey2 me-4" style="border: 1px solid #eee"></div>
+                      <div>
+                        <h6><strong>Grey2</strong></h6>
+                        <code>data-background-color="bg3"</code>
+                      </div>
+                    </div>
+                  </div>
+                  <p class="mt-3">
+                    Or you can use <code>data-background-full="[color]"</code>, so that the
+                    dashboard background is full. You can also make the dashboard background full
+                    using the background image by adding attr
+                    <code>data-background-full="image" data-image="[url image]"</code>.
+                  </p>
+                  <p class="mt-3">
+                    For <code>.logo-header</code> , <code>.navbar-header</code> the color options
+                    are Dark, Blue, Purple, Light-Blue, Orange, Green, Red. If you want to keep
+                    white then there is no need to add attr <code>.data-background-color</code>
+                  </p>
+                  <div class="bd-example">
+                    <div class="d-flex align-items-center mb-4">
+                      <div class="box-example bg-black me-4"></div>
+                      <div>
+                        <h6><strong>Dark</strong></h6>
+                        <code>data-background-color="dark"</code>
+                      </div>
+                    </div>
+                    <div class="d-flex align-items-center mb-4">
+                      <div class="box-example bg-black2 me-4"></div>
+                      <div>
+                        <h6><strong>Dark 2</strong></h6>
+                        <code>data-background-color="dark2"</code>
+                      </div>
+                    </div>
+                    <div class="d-flex align-items-center mb-4">
+                      <div class="box-example bg-primary me-4"></div>
+                      <div>
+                        <h6><strong>Blue</strong></h6>
+                        <code>data-background-color="blue"</code>
+                      </div>
+                    </div>
+                    <div class="d-flex align-items-center mb-4">
+                      <div class="box-example bg-primary2 me-4"></div>
+                      <div>
+                        <h6><strong>Blue 2</strong></h6>
+                        <code>data-background-color="blue2"</code>
+                      </div>
+                    </div>
+                    <div class="d-flex align-items-center mb-4">
+                      <div class="box-example bg-secondary me-4"></div>
+                      <div>
+                        <h6><strong>Purple</strong></h6>
+                        <code>data-background-color="purple"</code>
+                      </div>
+                    </div>
+                    <div class="d-flex align-items-center mb-4">
+                      <div class="box-example bg-secondary2 me-4"></div>
+                      <div>
+                        <h6><strong>Purple 2</strong></h6>
+                        <code>data-background-color="purple2"</code>
+                      </div>
+                    </div>
+                    <div class="d-flex align-items-center mb-4">
+                      <div class="box-example bg-info me-4"></div>
+                      <div>
+                        <h6><strong>Light Blue</strong></h6>
+                        <code>data-background-color="purple"</code>
+                      </div>
+                    </div>
+                    <div class="d-flex align-items-center mb-4">
+                      <div class="box-example bg-info2 me-4"></div>
+                      <div>
+                        <h6><strong>Light Blue 2</strong></h6>
+                        <code>data-background-color="light-blue2"</code>
+                      </div>
+                    </div>
+                    <div class="d-flex align-items-center mb-4">
+                      <div class="box-example bg-warning me-4"></div>
+                      <div>
+                        <h6><strong>Orange</strong></h6>
+                        <code>data-background-color="orange"</code>
+                      </div>
+                    </div>
+                    <div class="d-flex align-items-center mb-4">
+                      <div class="box-example bg-warning2 me-4"></div>
+                      <div>
+                        <h6><strong>Orange 2</strong></h6>
+                        <code>data-background-color="orange2"</code>
+                      </div>
+                    </div>
+                    <div class="d-flex align-items-center mb-4">
+                      <div class="box-example bg-success me-4"></div>
+                      <div>
+                        <h6><strong>Green</strong></h6>
+                        <code>data-background-color="green"</code>
+                      </div>
+                    </div>
+                    <div class="d-flex align-items-center mb-4">
+                      <div class="box-example bg-success2 me-4"></div>
+                      <div>
+                        <h6><strong>Green 2</strong></h6>
+                        <code>data-background-color="green2"</code>
+                      </div>
+                    </div>
+                    <div class="d-flex align-items-center mb-4">
+                      <div class="box-example bg-danger me-4"></div>
+                      <div>
+                        <h6><strong>Red</strong></h6>
+                        <code>data-background-color="red"</code>
+                      </div>
+                    </div>
+                    <div class="d-flex align-items-center mb-4">
+                      <div class="box-example bg-danger2 me-4"></div>
+                      <div>
+                        <h6><strong>Red 2</strong></h6>
+                        <code>data-background-color="red2"</code>
+                      </div>
+                    </div>
+                  </div>
+                  <p class="mt-3">
+                    You can also use custom color or use background images by adding attr
+                    <code>data-background-color="custom"</code>
+                  </p>
+                  <div class="bd-example">
+                    <div class="d-flex align-items-center mb-4">
+                      <div
+                        class="box-example me-4"
+                        data-background-color="custom"
+                        custom-color="#1f1e2e"
+                      ></div>
+                      <div>
+                        <h6><strong>Custom Color</strong></h6>
+                        <code>data-background-color="custom" custom-color="#1f1e2e"</code>
+                      </div>
+                    </div>
+                    <div class="d-flex align-items-center mb-4">
+                      <div
+                        class="box-example me-4"
+                        data-background-color="custom"
+                        custom-background="../../assets/img/bg_gradient2.png"
+                      ></div>
+                      <div>
+                        <h6><strong>Custom Image Background</strong></h6>
+                        <code
+                          >data-background-color="custom"
+                          custom-background="../../assets/img/bg_gradient2.png"</code
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="../assets/js/core/jquery-3.7.1.min.js"></script>
+  <script src="../assets/js/core/popper.min.js"></script>
+  <script src="../assets/js/core/bootstrap.min.js"></script>
+  <script src="../assets/js/plugin/jquery-scrollbar/jquery.scrollbar.min.js"></script>
+  <script src="../assets/js/kaiadmin.min.js"></script>
+  <script src="../assets/prism.js"></script>
+  <script src="../assets/prism-normalize-whitespace.min.js"></script>
+  <script type="text/javascript">
+    // Optional
+    Prism.plugins.NormalizeWhitespace.setDefaults({
+      "remove-trailing": true,
+      "remove-indent": true,
+      "left-trim": true,
+      "right-trim": true,
+    });
+
+    // handle links with @href started with '#' only
+    $(document).on("click", 'a[href^="#"]', function (e) {
+      // target element id
+      var id = $(this).attr("href");
+
+      // target element
+      var $id = $(id);
+      if ($id.length === 0) {
+        return;
+      }
+
+      // prevent standard hash navigation (avoid blinking in IE)
+      e.preventDefault();
+
+      // top position relative to the document
+      var pos = $id.offset().top - 80;
+
+      // animated top scrolling
+      $("body, html").animate({ scrollTop: pos });
+    });
+  </script>
+</html>

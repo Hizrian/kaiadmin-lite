@@ -1,0 +1,507 @@
+/*     	Customable Layouts Colors     */
+
+%nav-background-color-style {
+  .nav-search {
+    .input-group {
+      border: 0;
+      background: rgba(0, 0, 0, 0.18) !important;
+      box-shadow: 0px 4px 8px 0 rgba(0, 0, 0, 0.05);
+      transition: all 0.4s;
+      .form-control {
+        color: $white-color !important;
+        &::-webkit-input-placeholder {
+          /* Chrome/Opera/Safari */
+          opacity: 1;
+        }
+        &::-moz-placeholder {
+          /* Firefox 19+ */
+          opacity: 1;
+        }
+        &:-ms-input-placeholder {
+          /* IE 10+ */
+          opacity: 1;
+        }
+        &:-moz-placeholder {
+          /* Firefox 18- */
+          opacity: 1;
+        }
+      }
+      .search-icon {
+        color: $white-color !important;
+      }
+    }
+  }
+  #search-nav {
+    &.focus {
+      .nav-search {
+        .input-group {
+          background: #fff !important;
+          .form-control {
+            color: inherit !important;
+            &::-webkit-input-placeholder {
+              /* Chrome/Opera/Safari */
+              color: #bfbfbf !important;
+            }
+            &::-moz-placeholder {
+              /* Firefox 19+ */
+              color: #bfbfbf !important;
+            }
+            &:-ms-input-placeholder {
+              /* IE 10+ */
+              color: #bfbfbf !important;
+            }
+            &:-moz-placeholder {
+              /* Firefox 18- */
+              color: #bfbfbf !important;
+            }
+          }
+          .search-icon {
+            color: #bfbfbf !important;
+          }
+        }
+      }
+    }
+  }
+  .navbar-nav {
+    .nav-item {
+      .nav-link {
+        color: $white-color !important;
+        &:hover,
+        &:focus {
+          background: rgba(31, 30, 30, 0.12);
+        }
+      }
+      &.active {
+        .nav-link {
+          background: rgba(31, 30, 30, 0.12);
+        }
+      }
+    }
+    .topbar-user .profile-pic {
+      color: #fff;
+    }
+  }
+}
+
+body {
+  &[data-background-color="dark"],
+  &[data-background-color="dark"] {
+    .border-left,
+    .border-right,
+    .border-bottom,
+    .border-top {
+      border-color: rgba(181, 181, 181, 0.1) !important;
+    }
+  }
+}
+
+.main-header {
+  .navbar-header {
+    &[data-background-color] {
+      &:not([data-background-color="white"]) {
+        @extend %nav-background-color-style;
+      }
+      &[data-background-color="dark"],
+      &[data-background-color="dark2"] {
+        .dropdown-menu {
+          background: #202940 !important;
+          &:after {
+            border-bottom-color: #202940;
+          }
+          .dropdown-title {
+            border-color: rgba(181, 181, 181, 0.1) !important;
+            color: #fff;
+          }
+          .dropdown-divider {
+            border-color: rgba(181, 181, 181, 0.1) !important;
+          }
+          .dropdown-item {
+            color: #fff;
+            &:hover {
+              background: rgba(0, 0, 0, 0.1) !important;
+            }
+          }
+        }
+        .messages-notif-box .notif-center a,
+        .notif-box .see-all,
+        .messages-notif-box .see-all {
+          border-color: rgba(181, 181, 181, 0.1) !important;
+          color: #fff;
+        }
+        .notif-box .notif-center a,
+        .messages-notif-box .notif-center a {
+          color: #ffffff;
+          &:hover {
+            background: rgba(0, 0, 0, 0.1) !important;
+          }
+        }
+        .notif-box .notif-center a .notif-content .time,
+        .messages-notif-box .notif-center a .notif-content .time {
+          color: #b9babf !important;
+        }
+        .scrollbar-outer > .scroll-element {
+          background: transparent;
+        }
+        .topbar-user .profile-pic {
+          color: #fff !important;
+        }
+        .nav-search {
+          .input-group {
+            background: rgba(185, 185, 185, 0.18) !important;
+          }
+        }
+        .navbar-nav .nav-item {
+          .nav-link {
+            &:hover,
+            &:focus {
+              background: rgba(185, 185, 185, 0.18) !important;
+            }
+          }
+          &.active {
+            .nav-link {
+              background: rgba(185, 185, 185, 0.18) !important;
+            }
+          }
+        }
+      }
+    }
+  }
+  &[data-background-color="custom"] {
+    .navbar-header {
+      @extend %nav-background-color-style;
+    }
+  }
+}
+
+.btn-toggle {
+  color: #fff !important;
+}
+
+.logo-header {
+  .navbar-toggler .navbar-toggler-icon,
+  .more,
+  .btn-toggle {
+    color: #8d9498 !important;
+  }
+  &[data-background-color] {
+    .navbar-toggler {
+      .navbar-toggler-icon {
+        color: $white-color !important;
+      }
+    }
+    .more,
+    .btn-toggle {
+      color: $white-color !important;
+    }
+  }
+  &[data-background-color="white"],
+  &[data-background-color="grey"] {
+    .navbar-toggler .navbar-toggler-icon,
+    .more,
+    .btn-toggle {
+      color: #8d9498 !important;
+    }
+  }
+}
+
+@mixin main-header-color-style($color) {
+  background: $color !important;
+}
+
+@mixin logo-header-color-style($color) {
+  background: $color !important;
+}
+
+@mixin navbar-header-color-style($color) {
+  background: $color !important;
+}
+
+@mixin sidebar-color-style($color) {
+  background: $color !important;
+  .user {
+    border-color: rgba(181, 181, 181, 0.1) !important;
+    .info a > span {
+      color: #b9babf;
+      .user-level {
+        color: #8d9498;
+      }
+    }
+  }
+  .nav {
+    > .nav-item {
+      &.active {
+        > a,
+        a:hover,
+        a:focus {
+          p {
+            color: #fff !important;
+          }
+        }
+      }
+      a {
+        color: #b9babf !important;
+        &:hover,
+        &:focus,
+        &[data-toggle="collapse"][aria-expanded="true"] {
+          p {
+            color: #b9babf !important;
+          }
+        }
+      }
+    }
+  }
+  &.sidebar-style-2 {
+    .nav {
+      .nav-item {
+        &.active {
+          > a,
+          > a:hover,
+          > a:focus,
+          > a[data-toggle="collapse"][aria-expanded="true"] {
+            background: #fff !important;
+            color: $color !important;
+            p,
+            i,
+            .caret {
+              color: $color !important;
+            }
+          }
+        }
+      }
+    }
+  }
+  .scrollbar-inner > .scroll-element {
+    .scroll-bar {
+      background-color: #f7f7f7;
+    }
+    &.scroll-draggable .scroll-bar,
+    &:hover .scroll-bar {
+      background-color: #dcdbdb;
+    }
+  }
+}
+
+@mixin sidebar-color-style2($color) {
+  background: $color !important;
+  .user {
+    margin-top: 0px;
+    padding-top: 12.5px;
+    border-top: 1px solid;
+    border-color: rgba(255, 255, 255, 0.1) !important;
+    .info {
+      a > span {
+        color: #fff;
+        .user-level {
+          color: #eaeaea;
+        }
+      }
+      .caret {
+        border-top-color: #fff;
+      }
+    }
+  }
+  .topbar-user {
+    .profile-username {
+      color: #fff !important;
+    }
+  }
+  .nav {
+    .nav-item {
+      a {
+        color: #f5f5f5 !important;
+        p,
+        i,
+        .caret {
+          color: #f5f5f5 !important;
+        }
+        &:hover,
+        &:focus,
+        &[data-toggle="collapse"][aria-expanded="true"] {
+          color: #fff !important;
+          p,
+          i,
+          .caret {
+            color: #fff !important;
+          }
+        }
+      }
+    }
+
+    .nav-section {
+      .text-section,
+      .sidebar-mini-icon {
+        color: #eaeaea;
+      }
+    }
+    .nav-collapse li a .sub-item:before {
+      background: #eaeaea;
+    }
+  }
+  &.sidebar-style-2 {
+    .nav {
+      > .nav-item {
+        &.active {
+          > a,
+          > a:hover,
+          > a:focus,
+          > a[data-toggle="collapse"][aria-expanded="true"] {
+            background: #fff !important;
+            color: $color !important;
+            p,
+            i,
+            .caret {
+              color: $color !important;
+            }
+          }
+        }
+      }
+    }
+  }
+  .scrollbar-inner > .scroll-element {
+    .scroll-bar {
+      background-color: #f7f7f7;
+    }
+    &.scroll-draggable .scroll-bar,
+    &:hover .scroll-bar {
+      background-color: #dcdbdb;
+    }
+  }
+}
+
+%no-box-shadow-style {
+  -webkit-box-shadow: none !important;
+  -moz-box-shadow: none !important;
+  box-shadow: none !important;
+}
+
+//[data-background-color="white"]
+.logo-header[data-background-color="white"] {
+  @include logo-header-color-style($white-color);
+}
+.navbar-header[data-background-color="white"] {
+  @include navbar-header-color-style($white-color);
+}
+
+//[data-background-color="grey"]
+.logo-header[data-background-color="grey"] {
+  @include logo-header-color-style($grey3-color);
+  @extend %no-box-shadow-style;
+}
+
+//[data-background-color="dark"]
+
+.logo-header[data-background-color="dark"] {
+  @include logo-header-color-style($black-color);
+}
+.logo-header[data-background-color="dark2"] {
+  @include logo-header-color-style($black2-color);
+}
+.navbar-header[data-background-color="dark"] {
+  @include navbar-header-color-style($black-color);
+}
+.navbar-header[data-background-color="dark2"] {
+  @include navbar-header-color-style($black2-color);
+}
+
+//[data-background-color="blue"]
+
+.logo-header[data-background-color="blue"] {
+  @include logo-header-color-style($primary-color);
+}
+.logo-header[data-background-color="blue2"] {
+  @include logo-header-color-style($primary2-color);
+}
+.navbar-header[data-background-color="blue"] {
+  @include navbar-header-color-style($primary-color);
+}
+.navbar-header[data-background-color="blue2"] {
+  @include navbar-header-color-style($primary2-color);
+}
+
+//[data-background-color="purple"]
+
+.logo-header[data-background-color="purple"] {
+  @include logo-header-color-style($secondary-color);
+}
+.logo-header[data-background-color="purple2"] {
+  @include logo-header-color-style($secondary2-color);
+}
+.navbar-header[data-background-color="purple"] {
+  @include navbar-header-color-style($secondary-color);
+}
+.navbar-header[data-background-color="purple2"] {
+  @include navbar-header-color-style($secondary2-color);
+}
+
+//[data-background-color="light-blue"]
+
+.logo-header[data-background-color="light-blue"] {
+  @include logo-header-color-style($info-color);
+}
+.logo-header[data-background-color="light-blue2"] {
+  @include logo-header-color-style($info2-color);
+}
+.navbar-header[data-background-color="light-blue"] {
+  @include navbar-header-color-style($info-color);
+}
+.navbar-header[data-background-color="light-blue2"] {
+  @include navbar-header-color-style($info2-color);
+}
+
+//[data-background-color="green"]
+
+.logo-header[data-background-color="green"] {
+  @include logo-header-color-style($success-color);
+}
+.logo-header[data-background-color="green2"] {
+  @include logo-header-color-style($success2-color);
+}
+.navbar-header[data-background-color="green"] {
+  @include navbar-header-color-style($success-color);
+}
+.navbar-header[data-background-color="green2"] {
+  @include navbar-header-color-style($success2-color);
+}
+
+//[data-background-color="orange"]
+
+.logo-header[data-background-color="orange"] {
+  @include logo-header-color-style($warning-color);
+}
+.logo-header[data-background-color="orange2"] {
+  @include logo-header-color-style($warning2-color);
+}
+.navbar-header[data-background-color="orange"] {
+  @include navbar-header-color-style($warning-color);
+}
+.navbar-header[data-background-color="orange2"] {
+  @include navbar-header-color-style($warning2-color);
+}
+
+//[data-background-color="red"]
+
+.logo-header[data-background-color="red"] {
+  @include logo-header-color-style($danger-color);
+}
+.logo-header[data-background-color="red2"] {
+  @include logo-header-color-style($danger2-color);
+}
+.navbar-header[data-background-color="red"] {
+  @include navbar-header-color-style($danger-color);
+}
+.navbar-header[data-background-color="red2"] {
+  @include navbar-header-color-style($danger2-color);
+}
+
+.sidebar[data-background-color="grey"] {
+  background: $grey3-color;
+  @extend %no-box-shadow-style;
+}
+
+.sidebar[data-background-color="dark"] {
+  @include sidebar-color-style($black-color);
+}
+
+.sidebar[data-background-color="dark2"] {
+  @include sidebar-color-style($black2-color);
+}

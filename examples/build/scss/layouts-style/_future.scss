@@ -1,0 +1,28 @@
+.future-layout {
+	background: #3D82A4;
+	.logo-header {
+		background: transparent !important;
+	}
+	.sidebar {
+		background: transparent !important;
+		box-shadow: none !important;
+		-webkit-box-shadow: none !important;
+		-moz-box-shadow: none !important;
+	}
+	.main-header {
+		background: transparent !important;
+		position: static !important;
+		width: 100% !important;
+	}
+	.main-panel{
+		> .container {
+			margin-top: unset !important;
+			background: #fff !important;
+			border-top-left-radius: 30px;
+		}
+	}
+	.footer {
+		background: transparent !important;
+		border-top: 0 !important;
+	}
+}
