@@ -7,14 +7,14 @@ With Kaiadmin Lite, you can complete development faster with no design skills re
 
 Don't worry about getting started – we've documented how to get started using this dashboard template and utilizing the available components and plugins, making it easy to leverage the full potential of Kaiadmin Bootstrap 5 Admin Dashboard.
 
-Product Detail : https://themekita.com/kaiadmin-lite-bootstrap-5-dashboard.html
+**Product Detail** : https://themekita.com/kaiadmin-lite-bootstrap-5-dashboard.html
 
-Live Preview : https://themekita.com/demo-kaiadmin-lite-bootstrap-dashboard/livepreview/demo1/
+**Live Preview** : https://themekita.com/demo-kaiadmin-lite-bootstrap-dashboard/livepreview/demo1/
 
 # Get Kaiadmin PRO
 
 ![bg_themekitacom](https://github.com/Hizrian/kaiadmin-lite/assets/10692084/195bfcb3-f587-4920-bfba-a583244116ad)
-[Product Detail](https://themekita.com/demo-kaiadmin-pro-bootstrap-dashboard/)   [Buy This](https://themekita.lemonsqueezy.com/buy/526b603e-8eb3-4dcb-a7a3-842375952df5)
+[Product Detail](https://themekita.com/demo-kaiadmin-pro-bootstrap-dashboard/) |  [Buy This](https://themekita.lemonsqueezy.com/buy/526b603e-8eb3-4dcb-a7a3-842375952df5)
 
 ***
 ### [Kaiadmin - Classic Dashboard](https://themekita.com/demo-kaiadmin-pro-bootstrap-dashboard/livepreview/examples/demo1/)
